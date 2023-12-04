@@ -1,0 +1,27 @@
+0000000000000000000000000000000000000000 d23d4f436665b71defdd807ba0ae8ac2bdcadbea CyberTea0X <mihailusov_778@mail.ru> 1693166051 +0300	clone: from github.com:CyberTea0X/my_nvim_cfg.git
+d23d4f436665b71defdd807ba0ae8ac2bdcadbea bf482a2b808dc71bfe8ab69fec96636ef09b109f CyberTea0X <mihailusov_778@mail.ru> 1693166255 +0300	commit: Added plugin to gitignore and also added tabnine
+bf482a2b808dc71bfe8ab69fec96636ef09b109f 4b1aac39778d35123a67535211501384ce66e6d7 CyberTea0X <mihailusov_778@mail.ru> 1693215820 +0300	commit: Added svelte lsp
+4b1aac39778d35123a67535211501384ce66e6d7 5b15e301a8d17fc42bd24004899efb4d9bb3f0a2 CyberTea0X <mihailusov_778@mail.ru> 1693308928 +0300	commit: Added autodetection of indentation
+5b15e301a8d17fc42bd24004899efb4d9bb3f0a2 38f212e7eec119d1fc7da31ca18774e242d78aa9 CyberTea0X <mihailusov_778@mail.ru> 1693866799 +0300	commit (amend): Added autodetection of indentation
+38f212e7eec119d1fc7da31ca18774e242d78aa9 5b15e301a8d17fc42bd24004899efb4d9bb3f0a2 CyberTea0X <mihailusov_778@mail.ru> 1693866814 +0300	rebase (start): checkout refs/remotes/origin/main
+5b15e301a8d17fc42bd24004899efb4d9bb3f0a2 4f0bcc1ca10d24f8feae5f742051772976aaa114 CyberTea0X <mihailusov_778@mail.ru> 1693866814 +0300	rebase (pick): Added autodetection of indentation
+4f0bcc1ca10d24f8feae5f742051772976aaa114 4f0bcc1ca10d24f8feae5f742051772976aaa114 CyberTea0X <mihailusov_778@mail.ru> 1693866814 +0300	rebase (finish): returning to refs/heads/main
+4f0bcc1ca10d24f8feae5f742051772976aaa114 36540470dc3ad79fe419b9a105c6096dd296ebf1 CyberTea0X <mihailusov_778@mail.ru> 1693866883 +0300	commit (amend): Tabnine, auto indent detection and treesitter indent
+36540470dc3ad79fe419b9a105c6096dd296ebf1 da803a6ed780f14b946590e3f1e4d38052809259 CyberTea0X <mihailusov_778@mail.ru> 1693872045 +0300	commit: disabled treesitter indent because its awful for jsx
+da803a6ed780f14b946590e3f1e4d38052809259 89bd2eb55b90fa1f3e5cc5cf0c2d07864128a3bd CyberTea0X <mihailusov_778@mail.ru> 1695583848 +0300	commit: Disabled markdown treesitter highlight because it's too slow
+89bd2eb55b90fa1f3e5cc5cf0c2d07864128a3bd ac970b1da562a2ef35736044f5bfdffd825e8164 CyberTea0X <mihailusov_778@mail.ru> 1696706249 +0300	commit: Changed LSP from tsserver to eslint because eslint is reading my tsconfig
+ac970b1da562a2ef35736044f5bfdffd825e8164 916512aa3791de3962b94d00143c6a02e223d200 CyberTea0X <mihailusov_778@mail.ru> 1696707099 +0300	commit: Actually, tsserver is better..
+916512aa3791de3962b94d00143c6a02e223d200 cc4ec35538ff9f88bf94566576b2dfa649353a43 CyberTea0X <mihailusov_778@mail.ru> 1696719271 +0300	commit: Just formatting
+cc4ec35538ff9f88bf94566576b2dfa649353a43 8634612e6eb5e98294f4abfae575791ab90d5018 CyberTea0X <mihailusov_778@mail.ru> 1696720110 +0300	commit: Added autoformat on save
+8634612e6eb5e98294f4abfae575791ab90d5018 2d77ac67fda6a4c7e6271294f4e72ad0c359949a CyberTea0X <mihailusov_778@mail.ru> 1696721622 +0300	commit: Asynchronous formatting when saving a file with lsp-format.nvim
+2d77ac67fda6a4c7e6271294f4e72ad0c359949a 55bd140d18345e9b3617eb6fa89283b16ab61d96 CyberTea0X <mihailusov_778@mail.ru> 1696721708 +0300	commit: Cleanup
+55bd140d18345e9b3617eb6fa89283b16ab61d96 9948fd04df4175504a3455880bfc3a0e0c5566d9 CyberTea0X <mihailusov_778@mail.ru> 1697667894 +0300	commit: changed from pylsp to pyright
+9948fd04df4175504a3455880bfc3a0e0c5566d9 88866745ca326b33a427b8f523136d5c5f3be9f9 CyberTea0X <mihailusov_778@mail.ru> 1699100618 +0300	commit: Turned off treesitter highlighting for lua because it is buggy
+88866745ca326b33a427b8f523136d5c5f3be9f9 3ea07f023af1956707717ea42bc93a4df17a4f33 CyberTea0X <mihailusov_778@mail.ru> 1699101094 +0300	commit: Added flutter tools (lsp and other for flutter)
+3ea07f023af1956707717ea42bc93a4df17a4f33 238b93c3a450721d8af38d4e29330e8f09ed1a7b CyberTea0X <mihailusov_778@mail.ru> 1699102001 +0300	commit: ignore plugin again
+238b93c3a450721d8af38d4e29330e8f09ed1a7b 66763b73c4a52620fc8db1089169d96b63d05615 CyberTea0X <mihailusov_778@mail.ru> 1699102198 +0300	commit: ignore plugin
+66763b73c4a52620fc8db1089169d96b63d05615 c3f48eed6cfb77b2323059b9b20571caab3e213d CyberTea0X <mihailusov_778@mail.ru> 1699102343 +0300	commit: ignore packer_compiled
+c3f48eed6cfb77b2323059b9b20571caab3e213d 70a381f9fa1cdd7ab1920e2dd2407829e59aa92f CyberTea0X <mihailusov_778@mail.ru> 1699102442 +0300	commit: fixed untracked files
+70a381f9fa1cdd7ab1920e2dd2407829e59aa92f 40909d2293e20709d47e58c1453b9da0dfa4bba3 CyberTea0X <mihailusov_778@mail.ru> 1699150038 +0300	commit: Added discord activity display
+40909d2293e20709d47e58c1453b9da0dfa4bba3 755e8416fe2d0571a247f0487b015899bca7cb7d CyberTea0X <mihailusov_778@mail.ru> 1700765734 +0300	commit: Disabled treesitter for bash because of errors
+755e8416fe2d0571a247f0487b015899bca7cb7d 19a6df3d1e5a908274f30b4d2be260ebaaa365ea CyberTea0X <mihailusov_778@mail.ru> 1701725405 +0300	commit: No gpaste anymore
