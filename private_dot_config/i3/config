@@ -17,6 +17,9 @@ exec_always "setxkbmap -model pc104 -option grp:switch,grp:caps_toggle,grp_led:c
 # set keyboard repeat speed and delay:
 exec_always "xset r rate 150 50"
 
+# ssh-agent
+exec_always ~/.config/i3/scripts/gnome-keyring.sh
+
 # autostart specific programs in specific workspaces
 exec --no-startup-id i3-msg 'workspace 1:Web; exec "firefox"'
 exec --no-startup-id i3-msg 'workspace 2:Terminal; exec "gnome-terminal"'
