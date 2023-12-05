@@ -7,7 +7,7 @@ Chezmoi manages this dotfiles.
 WARNING: A huge part of the dependencies is missing here
 
 ```bash
-sudo apt install -y node alacritty i3 xclip maim openssh-server rofi tmux python3 python3-pip polybar nitrogen
+sudo apt install -y node alacritty i3 xclip maim openssh-server rofi tmux python3 python3-pip
 ```
 
 Other dependencies:
