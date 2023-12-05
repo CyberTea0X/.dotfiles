@@ -1,1 +1,1 @@
-
+Chezmoi manages this dotfiles.
