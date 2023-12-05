@@ -21,10 +21,10 @@ exec_always "xset r rate 150 50"
 exec_always ~/.config/i3/scripts/gnome-keyring.sh
 
 # autostart specific programs in specific workspaces
-exec --no-startup-id i3-msg 'workspace 1:Web; exec "firefox"'
-exec --no-startup-id i3-msg 'workspace 2:Terminal; exec "gnome-terminal"'
-exec --no-startup-id i3-msg 'workspace 3:Explorer; exec "nautilus"'
-exec --no-startup-id i3-msg 'workspace 4:Obsidian; exec "AppImageLauncher ~/Applications/Obsidian-1.4.13_5ba98cd50da8aa8d65d7f8a2bb3aee60.AppImage"'
+exec --no-startup-id i3-msg 'workspace $ws1; exec "firefox"'
+exec --no-startup-id i3-msg 'workspace $ws2; exec "gnome-terminal"'
+exec --no-startup-id i3-msg 'workspace $ws3; exec "nautilus"'
+exec --no-startup-id i3-msg 'workspace $ws4; exec "AppImageLauncher ~/Applications/Obsidian-1.4.13_5ba98cd50da8aa8d65d7f8a2bb3aee60.AppImage"'
 
 # assign specific workspaces to some apps
 assign [class="firefox"] $ws1
@@ -146,10 +146,10 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
+set $ws1 "1:Web"
+set $ws2 "2:Terminal"
+set $ws3 "3:Explorer"
+set $ws4 "4:Obsidian"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
