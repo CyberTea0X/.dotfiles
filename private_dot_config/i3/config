@@ -22,13 +22,14 @@ exec_always "xset r rate 150 50"
 
 # autostart specific programs in specific workspaces
 exec --no-startup-id i3-msg 'workspace $ws1; exec "firefox"'
-exec --no-startup-id i3-msg 'workspace $ws2; exec "alacritty"'
+exec --no-startup-id i3-msg 'workspace $ws2; exec "alacritty --class alacritty"'
 exec --no-startup-id i3-msg 'workspace $ws3; exec "nautilus"'
 exec --no-startup-id i3-msg 'workspace $ws4; exec "AppImageLauncher ~/Applications/Obsidian-1.4.13_5ba98cd50da8aa8d65d7f8a2bb3aee60.AppImage"'
 
 # assign specific workspaces to some apps
 assign [class="firefox"] $ws1
-assign [class="Alacritty"] $ws2
+# only alacritty and not Alacritty will be opened here
+assign [class="alacritty"] $ws2
 assign [class="nautilus"] $ws3
 assign [class="obsidian"] $ws4
 
@@ -92,7 +93,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "alacritty"
+bindsym $mod+Return exec "alacritty --class alacritty"
 
 # kill focused window
 bindsym $mod+Shift+q kill
