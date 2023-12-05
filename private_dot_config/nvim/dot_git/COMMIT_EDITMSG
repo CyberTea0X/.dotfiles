@@ -1,4 +1,4 @@
-No gpaste anymore
+Removed gpaste completely
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 #
@@ -6,5 +6,5 @@ No gpaste anymore
 # Your branch is up to date with 'origin/main'.
 #
 # Changes to be committed:
-#	deleted:    lua/cybertea/gpaste.lua
+#	modified:   lua/cybertea/init.lua
 #

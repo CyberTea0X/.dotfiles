@@ -25,3 +25,5 @@ c3f48eed6cfb77b2323059b9b20571caab3e213d 70a381f9fa1cdd7ab1920e2dd2407829e59aa92
 70a381f9fa1cdd7ab1920e2dd2407829e59aa92f 40909d2293e20709d47e58c1453b9da0dfa4bba3 CyberTea0X <mihailusov_778@mail.ru> 1699150038 +0300	commit: Added discord activity display
 40909d2293e20709d47e58c1453b9da0dfa4bba3 755e8416fe2d0571a247f0487b015899bca7cb7d CyberTea0X <mihailusov_778@mail.ru> 1700765734 +0300	commit: Disabled treesitter for bash because of errors
 755e8416fe2d0571a247f0487b015899bca7cb7d 19a6df3d1e5a908274f30b4d2be260ebaaa365ea CyberTea0X <mihailusov_778@mail.ru> 1701725405 +0300	commit: No gpaste anymore
+19a6df3d1e5a908274f30b4d2be260ebaaa365ea 19a6df3d1e5a908274f30b4d2be260ebaaa365ea СyberTea0X <mihailusov_778@mail.ru> 1701767666 +0300	reset: moving to HEAD
+19a6df3d1e5a908274f30b4d2be260ebaaa365ea 2d876a51dc6787f4527a1b09483f7b228dd20672 СyberTea0X <mihailusov_778@mail.ru> 1701767680 +0300	commit: Removed gpaste completely
