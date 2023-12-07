@@ -118,11 +118,6 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
-# auto launch tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
-
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export PATH=$PATH:/home/anatoliy/go/bin
