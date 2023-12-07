@@ -15,7 +15,6 @@ Other dependencies:
  - [neovim](https://neovim.io/)
  - [ripgrep](https://github.com/BurntSushi/ripgrep)
  - [tmux-sessionizer](https://github.com/jrmoulton/tmux-sessionizer)
- - [rofi-file-browser-extended](https://github.com/marvinkreis/rofi-file-browser-extended.git)
 
 also you need to install JetBrainsMono Nerd font:
 ```bash
