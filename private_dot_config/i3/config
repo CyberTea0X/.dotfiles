@@ -18,7 +18,7 @@ exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 exec_always "setxkbmap -model pc104 -option grp:switch,grp:caps_toggle,grp_led:caps us,ru"
 
 # set keyboard repeat speed and delay:
-exec_always "xset r rate 150 50"
+exec_always "xset r rate 200 70"
 
 # autostart specific programs in specific workspaces
 exec --no-startup-id i3-msg 'workspace $ws1; exec "firefox"'
