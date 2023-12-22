@@ -1,0 +1,21 @@
+[helpers]
+
+[default]
+depends = ["i3", "bash"]
+
+[default.files]
+alacritty = "~/.config/alacritty"
+nvim = "~/.config/nvim"
+rofi = "~/.config/rofi"
+tms = "~/.config/tms"
+tmux = "~/.config/tmux"
+
+[i3.files]
+xinitrc = "~/.xinitrc"
+i3 = "~/.config/i3"
+
+[bash.files]
+"bash/.bashrc" = "~/.bashrc"
+"bash/scripts" = "~/.local/bin"
+
+[default.variables]

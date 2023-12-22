@@ -1,6 +1,0 @@
-0000000000000000000000000000000000000000 c1bbd69bf1efa26a2749ec1d276748781f0ebbd4 CyberTea0X <mihailusov_778@mail.ru> 1692814088 +0300	clone: from github.com:CyberTea0X/tmux_cfg.git
-c1bbd69bf1efa26a2749ec1d276748781f0ebbd4 aef7bf7c0c07410348fcbe6413e47593f929dd2a CyberTea0X <mihailusov_778@mail.ru> 1692814304 +0300	commit: My tmux config
-aef7bf7c0c07410348fcbe6413e47593f929dd2a 8233fb7b6a7c6f4f2cdc5622772caeeb861f6b13 CyberTea0X <mihailusov_778@mail.ru> 1692816520 +0300	commit: Made bash my default shell
-8233fb7b6a7c6f4f2cdc5622772caeeb861f6b13 d585827ed088710ea35cabb11d12755a7aedfd87 CyberTea0X <mihailusov_778@mail.ru> 1692834932 +0300	commit: Added tmux-ressurect to restore sessions after reboot
-d585827ed088710ea35cabb11d12755a7aedfd87 7084a6b611659395ca0df0f99a20564b11442fed CyberTea0X <mihailusov_778@mail.ru> 1692835001 +0300	rebase (finish): refs/heads/main onto 98acd9c9dbdda882c53dfc906d6d5801a0218562
-7084a6b611659395ca0df0f99a20564b11442fed 3ff69ef2fc8ea700563cb3f9be643587fb2098c3 CyberTea0X <mihailusov_778@mail.ru> 1692837635 +0300	commit: Removed tmux resurrect because it is not working
