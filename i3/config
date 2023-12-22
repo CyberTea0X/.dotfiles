@@ -57,7 +57,7 @@ for_window [tiling] border pixel 2
 for_window [floating] border pixel 2
 
 #--- FLOATING APPLICATIONS ----------------------------------------
-for_window [class="TelegramDesktop"] floating enable
+# for_window [class="TelegramDesktop"] floating enable
 
 # frame color
 #                       Border  bg    Indicator Parent  border
