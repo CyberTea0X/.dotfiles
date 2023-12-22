@@ -21,7 +21,9 @@ exec_always "setxkbmap -model pc104 -option grp:switch,grp:caps_toggle,grp_led:c
 exec_always "xset r rate 200 50"
 
 #--- AUTOSTART ----------------------------------------------------
-exec --no-startup-id picom --config ~/.config/i3/picom/picom.conf
+exec_always --no-startup-id bash ~/.config/i3/scripts/launch_picom.sh
+exec_always --no-startup-id bash ~/.config/i3/scripts/launch_polybar.sh
+exec --no-startup-id feh --bg-scale ~/Pictures/bg/red-hell.jpg
 
 # autostart specific programs in specific workspaces
 exec --no-startup-id i3-msg 'workspace $ws1; exec "firefox"'
@@ -56,11 +58,13 @@ default_border pixel 0
 for_window [tiling] border pixel 2
 for_window [floating] border pixel 2
 
+#--- WINDOW GAPS
+# gaps inner|outer|horizontal|vertical|top|right|bottom|left
+gaps top 5
 #--- FLOATING APPLICATIONS ----------------------------------------
 # for_window [class="TelegramDesktop"] floating enable
 
-# frame color
-#                       Border  bg    Indicator Parent  border
+# frame color Border  bg    Indicator Parent  border
 client.focused			#cad3f5 #cad3f5 #cad3f5 #cad3f5
 client.focused_inactive	#24273a #24273a #24273a #24273a
 client.unfocused		#24273a #24273a #24273a #24273a
@@ -238,9 +242,9 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+#bar {
+#status_command i3status
+#}
 
 # Go to terminal on start
 exec i3-msg "workspace $ws2"
