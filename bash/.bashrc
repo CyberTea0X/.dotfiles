@@ -5,10 +5,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# VARIABLES
+export DOTS="$HOME/.dotfiles"
+
 # ALIASES
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias hw='cd ~/Lessons'
+alias dots='cd $DOTS'
+
 
 PS1='[\u@\h \W]\$ '
 
