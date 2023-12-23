@@ -24,6 +24,10 @@ exec_always "xset r rate 200 50"
 exec_always --no-startup-id bash ~/.config/i3/scripts/launch_picom.sh
 exec_always --no-startup-id bash ~/.config/i3/scripts/launch_polybar.sh
 exec --no-startup-id feh --bg-scale ~/Pictures/bg/red-hell.jpg
+exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
+# exec --no-startup-id dex --autostart --environment i3
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # autostart specific programs in specific workspaces
 exec --no-startup-id i3-msg 'workspace $ws1; exec "firefox"'

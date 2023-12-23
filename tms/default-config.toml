@@ -1,1 +1,9 @@
-search_paths = ['~/Programming', "~/.config/nvim", "~/.config/tms", "~/.config/tmux", "~/.config/i3"]
+search_paths = []
+
+[[search_dirs]]
+path = '/home/anatoliy/program'
+depth = 10
+
+[[search_dirs]]
+path = '/home/anatoliy/.dotfiles'
+depth = 10
