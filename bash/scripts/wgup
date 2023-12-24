@@ -1,0 +1,2 @@
+#!/bin/bash
+alacritty -e bash -c "wg-quick up wg0 && read -p 'press'"

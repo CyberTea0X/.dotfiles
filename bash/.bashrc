@@ -23,7 +23,7 @@ alias dotsu='git add $DOTS/* && git -C $DOTS commit -m "update .dotfiles" && git
 
 PS1='[\u@\h \W]\$ '
 
-export PATH="$PATH:~/.local/bin"
+export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.cargo/bin
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
