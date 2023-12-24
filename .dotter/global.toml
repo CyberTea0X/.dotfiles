@@ -1,7 +1,7 @@
 [helpers]
 
 [default]
-depends = ["i3", "bash"]
+depends = ["i3", "bash", "gedit", "telegram"]
 
 [default.files]
 alacritty = "~/.config/alacritty"
@@ -11,8 +11,15 @@ tms = "~/.config/tms"
 tmux = "~/.config/tmux"
 
 [i3.files]
-xinitrc = "~/.xinitrc"
+"xinitrc/.xinitrc" = "~/.xinitrc"
 i3 = "~/.config/i3"
+polybar = "~/.config/polybar"
+picom = "~/.config/picom"
+dunst = "~/.config/dunst"
+
+[telegram.files]
+[gedit.files]
+"soft_themes/gedit" = "~/.local/share/gedit/styles"
 
 [bash.files]
 "bash/.bashrc" = "~/.bashrc"
