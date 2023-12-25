@@ -19,6 +19,7 @@ alias grep='grep --color=auto'
 alias hw='cd ~/Lessons'
 alias dots='cd $DOTS'
 alias dotsu='git add $DOTS && git -C $DOTS commit -m "update .dotfiles" && git -C $DOTS push'
+alias dotsd='dots && git pull && dotter deploy && cd -'
 
 
 PS1='[\u@\h \W]\$ '

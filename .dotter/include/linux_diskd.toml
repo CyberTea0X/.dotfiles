@@ -1,0 +1,7 @@
+[bash.files."bash/.bashrc"]
+target = "~/.bashrc"
+type = "template"
+append = """
+# Automatically appended by dotter
+alias diskd='cd /media/diskd'
+"""
