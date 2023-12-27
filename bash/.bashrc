@@ -24,6 +24,14 @@ alias dotsd='dots && git pull && dotter deploy && cd -'
 alias pkgdump='pacman -Qqen > $DOTS/packages/official && pacman -Qqem > $DOTS/packages/unofficial'
 alias pkgdepl='sudo pacman -S --needed - < $DOTS/packages/official && yay -S --needed - < $DOTS/packages/unofficial'
 
+# FUNCTIONS
+pkgdiff ()
+{
+  echo "Official packages:"
+  echo $(diff -u $DOTS/packages/official <(pacman -Qqen))
+  echo "Unofficial packages:"
+  echo $(diff -u $DOTS/packages/unofficial <(pacman -Qqem))
+}
 
 PS1='[\u@\h \W]\$ '
 
