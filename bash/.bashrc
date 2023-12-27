@@ -12,6 +12,7 @@ fi
 
 # VARIABLES
 export DOTS="$HOME/.dotfiles"
+export DOTSB="$DOTS/bash/.bashrc"
 
 # ALIASES
 alias ls='ls --color=auto'
@@ -20,6 +21,8 @@ alias hw='cd ~/Lessons'
 alias dots='cd $DOTS'
 alias dotsu='git -C $DOTS add $DOTS && git -C $DOTS commit -m "update .dotfiles" && git -C $DOTS push'
 alias dotsd='dots && git pull && dotter deploy && cd -'
+alias pkgdump='pacman -Qqen > $DOTS/packages/official && pacman -Qqem > $DOTS/packages/unofficial'
+alias pkgdepl='sudo pacman -S --needed - < $DOTS/packages/official && yay -S --needed - < $DOTS/packages/unofficial'
 
 
 PS1='[\u@\h \W]\$ '
