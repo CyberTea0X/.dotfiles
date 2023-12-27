@@ -9,6 +9,7 @@ dex
 discord
 dunst
 efibootmgr
+entr
 feh
 firefox
 gedit
@@ -27,6 +28,7 @@ linux-headers
 lxappearance
 maim
 mold
+nasm
 neofetch
 neovim-qt
 networkmanager
@@ -60,6 +62,7 @@ sudo
 syncthing
 telegram-desktop
 tmux
+tree
 ttf-nerd-fonts-symbols
 unzip
 vim
