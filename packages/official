@@ -75,6 +75,10 @@ unzip
 vim
 wget
 which
+wine
+wine-gecko
+wine-mono
+winetricks
 wireguard-tools
 xarchiver
 xclip
