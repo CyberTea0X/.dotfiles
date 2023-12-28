@@ -80,6 +80,7 @@ wine-gecko
 wine-mono
 winetricks
 wireguard-tools
+wireshark-qt
 xarchiver
 xclip
 xdg-user-dirs
