@@ -1,0 +1,7 @@
+import = ["/home/anatoliy/.config/alacritty/catppuccin/catppuccin-macchiato.toml"]
+
+[scrolling]
+history = 100
+
+[window]
+opacity = 0.9
