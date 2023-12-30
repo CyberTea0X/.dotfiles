@@ -7,12 +7,14 @@ clang
 cmake
 cmatrix
 dex
+dhcpcd
 discord
 dunst
 efibootmgr
 entr
 feh
 firefox
+gamemode
 gdb
 gedit
 gimp
@@ -25,6 +27,7 @@ i3lock
 i3status
 imagemagick
 iptables-nft
+lib32-gamemode
 linux
 linux-firmware
 linux-headers
@@ -36,6 +39,7 @@ nasm
 neofetch
 neovim-qt
 networkmanager
+ninja
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -63,6 +67,7 @@ rofi
 rsync
 rustup
 steam
+steam-native-runtime
 sudo
 syncthing
 telegram-desktop
@@ -73,6 +78,7 @@ udiskie
 udisks2
 unzip
 vim
+vulkan-tools
 wget
 which
 wine
