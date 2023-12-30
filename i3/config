@@ -65,6 +65,7 @@ for_window [floating] border pixel 1
 #--- WINDOW GAPS
 # gaps inner|outer|horizontal|vertical|top|right|bottom|left
 gaps top 2
+gaps outer 10
 #--- FLOATING APPLICATIONS ----------------------------------------
 # for_window [class="TelegramDesktop"] floating enable
 
