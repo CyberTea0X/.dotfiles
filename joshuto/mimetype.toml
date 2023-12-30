@@ -17,10 +17,16 @@ any             = [
 	{ command = "file", args = ["--mime-type", "-L", "-b"], fork = false, silent = false, confirm_exit = true },
 	]
 
+directory       = [
+	{ command = "alacritty", args = ["--working-directory"] }
+]
+
 [extension]
 
 [mimetype]
 
+[mimetype.inode]
+inherit = "directory"
 # text/*
 [mimetype.text]
 inherit = "text_default"
