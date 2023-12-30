@@ -1,7 +1,7 @@
 [helpers]
 
 [default]
-depends = ["i3", "bash", "gedit", "telegram"]
+depends = ["i3", "bash", "gedit", "telegram", "joshuto"]
 
 [default.files]
 alacritty = "~/.config/alacritty"
@@ -24,5 +24,8 @@ dunst = "~/.config/dunst"
 [bash.files]
 "bash/.bashrc" = "~/.bashrc"
 "bash/scripts" = "~/.local/bin"
+
+[joshuto.files]
+joshuto = "~/.config/joshuto"
 
 [default.variables]

@@ -32,13 +32,11 @@ exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
 # autostart specific programs in specific workspaces
 exec --no-startup-id i3-msg 'workspace $ws1; exec "firefox"'
 exec --no-startup-id i3-msg 'workspace $ws2; exec "alacritty --class alacritty"'
-exec --no-startup-id i3-msg 'workspace $ws3; exec "pcmanfm"'
 
 # assign specific workspaces to some apps
 assign [class="firefox"] $ws1
 # only alacritty and not Alacritty will be opened here
 assign [class="alacritty"] $ws2
-assign [class="nautilus"] $ws3
 
 ## screenshots
 bindsym Print exec --no-startup-id "maim \\"/home/$USER/Pictures/Screenshots/$(date).png\\""
@@ -106,7 +104,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "alacritty --class alacritty"
+bindsym $mod+Return exec "alacritty"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -178,7 +176,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:Web"
 set $ws2 "2:Terminal"
-set $ws3 "3:Explorer"
+set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"

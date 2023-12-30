@@ -1,0 +1,29 @@
+[class]
+image_default	= [
+	{ command = "feh", args = ["--auto-zoom", "-x", "--borderless", "--image-bg", "black", "--scale-down", "--start-at"], fork = true, silent = true },
+	{ command = "gimp", fork = true, silent = true },
+	{ command = "krita", fork = true, silent = true },
+]
+
+text_default    = [
+	{ command = "nvim", fork = false, silent = false },
+	{ command = "vim", fork = false, silent = false },
+	{ command = "gedit", fork = true, silent = true },
+]
+
+any             = [
+	{ command = "xdg-open" },
+	{ command = "xdg-open", silent = true },
+	{ command = "file", args = ["--mime-type", "-L", "-b"], fork = false, silent = false, confirm_exit = true },
+	]
+
+[extension]
+
+[mimetype]
+
+# text/*
+[mimetype.text]
+inherit = "text_default"
+
+[mimetype.application]
+inherit = "any"
