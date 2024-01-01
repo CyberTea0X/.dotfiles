@@ -30,6 +30,6 @@ joshuto = "~/.config/joshuto"
 
 [mime.files]
 "mime/desktop" = "~/.local/share/applications"
-"mime/mimeapps.list" = "~/.config/mimeapps.list"
-
+# I don't want applications just rewrite my mimeapps.list without me knowing it
+"mime/mimeapps.list" = {target = "~/.config/mimeapps.list", type = "template"}
 [default.variables]

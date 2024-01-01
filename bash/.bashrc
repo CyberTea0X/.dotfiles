@@ -24,14 +24,20 @@ alias dotsd='dots && dotter deploy && cd - > /dev/null'
 alias dotsdd='dots && git pull && dotter deploy && cd - > /dev/null'
 alias pkgdump='pacman -Qqen > $DOTS/packages/official && pacman -Qqem > $DOTS/packages/unofficial'
 alias pkgdepl='sudo pacman -S --needed - < $DOTS/packages/official && yay -S --needed - < $DOTS/packages/unofficial'
+alias mimesync='cp $HOME/.config/mimeapps.list $DOTS/mime/mimeapps.list'
 
 # FUNCTIONS
 pkgdiff ()
 {
   echo "Official packages:"
-  echo $(diff -u $DOTS/packages/official <(pacman -Qqen))
+  echo $(diff $DOTS/packages/official <(pacman -Qqen))
   echo "Unofficial packages:"
-  echo $(diff -u $DOTS/packages/unofficial <(pacman -Qqem))
+  echo $(diff $DOTS/packages/unofficial <(pacman -Qqem))
+}
+
+mimediff ()
+{
+  echo $(diff $DOTS/mime/mimeapps.list $HOME/.config/mimeapps.list)
 }
 
 PS1='[\u@\h \W]\$ '
