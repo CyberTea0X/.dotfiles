@@ -1,0 +1,34 @@
+[Added Associations]
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+application/zip=xarchiver.desktop;pcmanfm.desktop;
+image/jpg=feh.desktop;
+image/png=feh.desktop;
+inode/directory=userapp-zip -r-BTQ9F2.desktop;pcmanfm.desktop;
+text/html=firefox.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+[Default Applications]
+image/jpg=feh.desktop;
+image/png=feh.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice.desktop;
+application/msword=onlyoffice.desktop;
+application/vnd.oasis.opendocument.text=onlyoffice.desktop;
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+application/zip=xarchiver.desktop;
+inode/directory=pcmanfm.desktop;
+text/html=firefox.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+

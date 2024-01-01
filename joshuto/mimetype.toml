@@ -1,5 +1,6 @@
 [class]
 image_default	= [
+    { command = "xdg-open", fork = true, silent = true },
 	{ command = "feh", args = ["--auto-zoom", "-x", "--borderless", "--image-bg", "black", "--scale-down", "--start-at"], fork = true, silent = true },
 	{ command = "gimp", fork = true, silent = true },
 	{ command = "krita", fork = true, silent = true },
@@ -7,18 +8,22 @@ image_default	= [
 
 text_default    = [
 	{ command = "nvim", fork = false, silent = false },
+    { command = "xdg-open", fork = true, silent = true },
 	{ command = "vim", fork = false, silent = false },
 	{ command = "gedit", fork = true, silent = true },
 ]
 
 any             = [
+    { command = "xdg-open", fork = true, silent = true },
 	{ command = "xdg-open" },
-	{ command = "xdg-open", silent = true },
 	{ command = "file", args = ["--mime-type", "-L", "-b"], fork = false, silent = false, confirm_exit = true },
+	{ command = "no_spaces" },
 	]
 
 directory       = [
-	{ command = "alacritty", args = ["--working-directory"] }
+	{ command = "alacritty", args = ["--working-directory"] },
+	{ command = "zip", args = ["-r", "out.zip"] },
+	{ command = "no_spaces" },
 ]
 
 [extension]
@@ -27,6 +32,9 @@ directory       = [
 
 [mimetype.inode]
 inherit = "directory"
+
+[mimetype.image]
+inherit = "image_default"
 # text/*
 [mimetype.text]
 inherit = "text_default"

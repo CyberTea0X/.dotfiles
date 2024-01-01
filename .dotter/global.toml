@@ -1,7 +1,7 @@
 [helpers]
 
 [default]
-depends = ["i3", "bash", "gedit", "telegram", "joshuto"]
+depends = ["i3", "bash", "gedit", "telegram", "joshuto", "mime"]
 
 [default.files]
 alacritty = "~/.config/alacritty"
@@ -27,5 +27,9 @@ dunst = "~/.config/dunst"
 
 [joshuto.files]
 joshuto = "~/.config/joshuto"
+
+[mime.files]
+"mime/desktop" = "~/.local/share/applications"
+"mime/mimeapps.list" = "~/.config/mimeapps.list"
 
 [default.variables]

@@ -134,6 +134,12 @@ keymap = [
   { keys = ["g", "p"], commands = ["cd ~/program"] },
   { keys = ["g", "j"], commands = ["cd ~/.dotfiles/joshuto"] },
   { keys = ["g", "o"], commands = ["cd ~/Obsidian"] },
+
+  { keys = ["g", "t", "p"], commands = [":shell tms"] },
+  { keys = ["g", "t", "s"], commands = [":shell tms switch"] },
+  { keys = ["g", "t", "t"], commands = [":shell tmux"] },
+  { keys = ["g", "t", "a"], commands = [":shell tmux a"] },
+
   { keys = ["?"], commands = ["help"] },
   { keys = ["!"], commands = [":shell "] },
 ]

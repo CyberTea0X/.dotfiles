@@ -1,0 +1,2 @@
+#!/bin/bash
+onlyoffice-desktopeditors "`readlink -f $1`"

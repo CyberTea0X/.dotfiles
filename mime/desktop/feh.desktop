@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=feh
+Exec=feh --auto-zoom -x --borderless --image-bg black --scale-down --start-at %f
+Categories=Other;
+NoDisplay=true
+MimeType=image/*;
+Terminal=false
