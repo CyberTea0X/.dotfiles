@@ -1,4 +1,4 @@
-import = ["/home/anatoliy/.config/alacritty/catppuccin/catppuccin-macchiato.toml"]
+import = ["~/.config/alacritty/themes/rose-pine.toml"]
 
 [scrolling]
 history = 100
