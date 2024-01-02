@@ -1,16 +1,72 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+    vim.fn.system({
+        "git",
+        "clone",
+        "--filter=blob:none",
+        "https://github.com/folke/lazy.nvim.git",
+        "--branch=stable", -- latest stable release
+        lazypath,
+    })
 end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.5',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    },
+    -- theme
+    { 'rose-pine/neovim',    name = 'rose-pine' },
+    -- auto detecting indent style
+    'nmac427/guess-indent.nvim',
+    -- tabnine
+    { 'codota/tabnine-nvim', build = "./dl_binaries.sh" },
+    -- game for being good at vim
+    'thePrimeagen/vim-be-good',
+    -- helps working with cargo.toml
+    { 'saecki/crates.nvim',              dependencies = { 'nvim-lua/plenary.nvim' } },
+    -- translation
+    'uga-rosa/translate.nvim',
+    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+    'theprimeagen/harpoon',
+    'mbbill/undotree',
+    'tpope/vim-fugitive',
+    'lukas-reineke/lsp-format.nvim',
+    -- just for discord presence, nothing practical
+    'andweeb/presence.nvim',
+    -- lsp and other for flutter
+    -- use {
+    -- 'akinsho/flutter-tools.nvim',
+    -- requires = {
+    -- 'nvim-lua/plenary.nvim',
+    -- 'stevearc/dressing.nvim', -- optional for vim.ui.select
+    -- },
+    -- }
+    -- auto install lsp
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    -- lsp
+    {
+        'VonHeikemen/lsp-zero.nvim',
+        dependencies = {
+            -- LSP Support
+            'neovim/nvim-lspconfig', -- Required
+            {                        -- Optional
+                'williamboman/mason.nvim',
+                build = function()
+                    pcall(vim.cmd, 'MasonUpdate')
+                end,
+            },
+            'williamboman/mason-lspconfig.nvim', -- Optional
 
+            -- Autocompletion
+            'hrsh7th/nvim-cmp',     -- Required
+            'hrsh7th/cmp-nvim-lsp', -- Required
+            'L3MON4D3/LuaSnip',     -- Required
+        }
+    }
 })
+vim.cmd('colorscheme rose-pine')
