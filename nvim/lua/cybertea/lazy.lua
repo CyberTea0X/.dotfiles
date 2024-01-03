@@ -67,6 +67,23 @@ require("lazy").setup({
             'hrsh7th/cmp-nvim-lsp', -- Required
             'L3MON4D3/LuaSnip',     -- Required
         }
-    }
+    },
+    -- leetcode stuff
+    {
+        "kawre/leetcode.nvim",
+        build = ":TSUpdate html",
+        dependencies = {
+            "nvim-telescope/telescope.nvim",
+            "nvim-lua/plenary.nvim", -- required by telescope
+            "MunifTanjim/nui.nvim",
+
+            -- optional
+            "nvim-treesitter/nvim-treesitter",
+            "rcarriga/nvim-notify",
+            "nvim-tree/nvim-web-devicons",
+        },
+        opts = {}
+    },
+    --
 })
 vim.cmd('colorscheme rose-pine')
