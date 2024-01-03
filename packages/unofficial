@@ -1,5 +1,5 @@
+bibata-cursor-theme-bin
 catppuccin-cursors-macchiato
-catppuccin-gtk-theme-macchiato
 cbonsai
 dotter-rs
 joshuto-bin
@@ -9,5 +9,6 @@ nvim-packer-git
 onlyoffice-bin
 packettracer
 rofi-greenclip
+rose-pine-gtk-theme-full
 xkb-switch
 yay
