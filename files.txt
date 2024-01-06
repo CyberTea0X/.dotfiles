@@ -1,7 +1,0 @@
-mv ~/.config/nvim .
-mv ~/.config/tmux .
-mv ~/.config/i3 .
-mv ~/.config/tms .
-mv ~/.config/alacritty .
-mv ~/.config/rofi .
-mv ~/.bashrc .

@@ -17,11 +17,9 @@ export DOTSB="$DOTS/bash/.bashrc"
 # ALIASES
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias hw='cd ~/Lessons'
-alias dots='cd $DOTS'
 alias dotsu='git -C $DOTS add $DOTS && git -C $DOTS commit -m "update .dotfiles" && git -C $DOTS push'
-alias dotsd='dots && dotter deploy && cd - > /dev/null'
-alias dotsdd='dots && git pull && dotter deploy && cd - > /dev/null'
+alias dotsd='cd $DOTS && dotter deploy && cd - > /dev/null'
+alias dotsdd='cd $DOTS && git pull && dotter deploy && cd - > /dev/null'
 alias pkgdump='pacman -Qqen > $DOTS/packages/official && pacman -Qqem > $DOTS/packages/unofficial'
 alias pkgdepl='sudo pacman -S --needed - < $DOTS/packages/official && yay -S --needed - < $DOTS/packages/unofficial'
 alias mimesync='cp $HOME/.config/mimeapps.list $DOTS/mime/mimeapps.list'

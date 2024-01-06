@@ -1,7 +1,11 @@
 [helpers]
 
+
 [default]
-depends = ["i3", "bash", "gedit", "telegram", "joshuto", "mime"]
+depends = ["i3", "bash", "gedit", "telegram", "mime"]
+
+[nondefault]
+depends = ["joshuto"]
 
 [default.files]
 alacritty = "~/.config/alacritty"
