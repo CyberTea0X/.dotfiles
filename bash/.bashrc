@@ -24,6 +24,7 @@ alias pkgdump='pacman -Qqen > $DOTS/packages/official && pacman -Qqem > $DOTS/pa
 alias pkgdepl='sudo pacman -S --needed - < $DOTS/packages/official && yay -S --needed - < $DOTS/packages/unofficial'
 alias mimesync='cp $HOME/.config/mimeapps.list $DOTS/mime/mimeapps.list'
 alias fehv='feh --auto-zoom -x --borderless --image-bg black --scale-down --start-at'
+alias cheat='cht.sh'
 
 # GOTO ALIASES
 alias hw='cd ~/Lessons'
