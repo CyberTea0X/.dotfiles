@@ -33,7 +33,8 @@ tmux = "~/.config/tmux"
 
 # cheatsheets for commands
 [cheat.files]
-cheat = "~/.config/cheat"
+"cheat/conf.yml" = "~/.config/cheat/conf.yml"
+"cheat/cheatsheets" = {target = "~/.config/cheat/cheatsheets", type="symbolic", recurse=false}
 
 # tiled window manager
 [i3.files]

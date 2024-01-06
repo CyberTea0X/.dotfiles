@@ -1,0 +1,26 @@
+[38;5;246;03m# nix[39;00m
+[38;5;246;03m# Powerful package manager that makes package management reliable, reproducible, and declarative.[39;00m
+[38;5;246;03m# The `nix` command-line utility is experimental and requires enabling experimental features. For a classic, stable interface, see `tldr nix classic`.[39;00m
+[38;5;246;03m# Some `nix` subcommands such as `build`, `develop`, `flake`, `registry`, `profile`, `search`, `repl`, `store`, `edit`, `why-depends` etc. have their own usage documentation, accessible via `tldr nix3 subcommand`.[39;00m
+[38;5;246;03m# More information: <https://nixos.org/manual/nix>.[39;00m
+
+[38;5;246;03m# Enable the `nix` command:[39;00m
+[38;5;252mmkdir[39m[38;5;252m [39m[38;5;252m-p[39m[38;5;252m [39m[38;5;252m~/.config/nix[39m[38;5;252m;[39m[38;5;252m [39m[38;5;31mecho[39m[38;5;252m [39m[38;5;214m'experimental-features = nix-command flakes'[39m[38;5;252m [39m[38;5;252m>[39m[38;5;252m [39m[38;5;252m~/.config/nix/nix.conf[39m
+
+[38;5;246;03m# Display help for the `nix` subcommand:[39;00m
+[38;5;252mnix[39m[38;5;252m [39m[38;5;31mhelp[39m[38;5;252m [39m[38;5;252msubcommand[39m
+
+[38;5;246;03m# Search for a package in nixpkgs via its name or description:[39;00m
+[38;5;252mnix[39m[38;5;252m [39m[38;5;252msearch[39m[38;5;252m [39m[38;5;252mnixpkgs[39m[38;5;252m [39m[38;5;252msearch_term[39m
+
+[38;5;246;03m# Start a shell with the specified packages from nixpkgs available:[39;00m
+[38;5;252mnix[39m[38;5;252m [39m[38;5;252mshell[39m[38;5;252m [39m[38;5;252mnixpkgs#pkg1[39m[38;5;252m [39m[38;5;252mnixpkgs#pkg2[39m[38;5;252m [39m[38;5;252mnixpkgs#pkg3[39m[38;5;252m [39m[38;5;252m...[39m
+
+[38;5;246;03m# Install some packages from nixpkgs permanently:[39;00m
+[38;5;252mnix[39m[38;5;252m [39m[38;5;252mprofile[39m[38;5;252m [39m[38;5;252minstall[39m[38;5;252m [39m[38;5;252mnixpkgs#pkg1[39m[38;5;252m [39m[38;5;252mnixpkgs#pkg2[39m[38;5;252m [39m[38;5;252mnixpkgs#pkg3[39m[38;5;252m [39m[38;5;252m...[39m
+
+[38;5;246;03m# Remove unused paths from Nix store to free up space:[39;00m
+[38;5;252mnix[39m[38;5;252m [39m[38;5;252mstore[39m[38;5;252m [39m[38;5;252mgc[39m
+
+[38;5;246;03m# Start an interactive environment for evaluating Nix expressions:[39;00m
+[38;5;252mnix[39m[38;5;252m [39m[38;5;252mrepl[39m

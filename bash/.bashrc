@@ -31,15 +31,31 @@ alias dots='cd $DOTS'
 # FUNCTIONS
 pkgdiff ()
 {
-  echo "Official packages:"
-  echo $(diff $DOTS/packages/official <(pacman -Qqen))
-  echo "Unofficial packages:"
-  echo $(diff $DOTS/packages/unofficial <(pacman -Qqem))
+    echo "Official packages:"
+    echo $(diff $DOTS/packages/official <(pacman -Qqen))
+    echo "Unofficial packages:"
+    echo $(diff $DOTS/packages/unofficial <(pacman -Qqem))
 }
 
 mimediff ()
 {
-  echo $(diff $DOTS/mime/mimeapps.list $HOME/.config/mimeapps.list)
+    echo $(diff $DOTS/mime/mimeapps.list $HOME/.config/mimeapps.list)
+}
+
+# cheat command shadowing that caches result and uses cheat.sh
+cheat ()
+{
+    local cheatsheet
+    cheatsheet=$(command cheat $1)
+    local status=$?
+    if [ $status != 0 ]
+    then
+        cheatsheet=$(curl cheat.sh/$1)
+        if [[ "$cheatsheet" != *"Unknown topic"* ]]; then
+            echo "$cheatsheet" > "$HOME/.dotfiles/cheat/cheatsheets/personal/$1"
+        fi
+    fi
+    echo "$cheatsheet"
 }
 
 PS1='[\u@\h \W]\$ '
