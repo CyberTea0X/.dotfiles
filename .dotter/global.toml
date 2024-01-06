@@ -2,18 +2,40 @@
 
 
 [default]
-depends = ["i3", "bash", "gedit", "telegram", "mime"]
+depends = [
+    "i3", "bash", "gedit", "telegram", "mime", "alacritty", "nvim",
+    "rofi", "tms", "tmux", "cheat",
+    ]
 
 [nondefault]
 depends = ["joshuto"]
 
-[default.files]
+# terminal
+[alacritty.files] 
 alacritty = "~/.config/alacritty"
+
+# terminal editor
+[nvim.files]
 nvim = "~/.config/nvim"
+
+# runs .desktop files and scripts with fuzzy finding
+[rofi.files]
 rofi = "~/.config/rofi"
+
+# tmux sessionizer 
+# (fuzzy find projects containing .git and create tmux sessions)
+[tms.files]
 tms = "~/.config/tms"
+
+# terminal multiplexer (multiple windows/splits/sessions in one terminal)
+[tmux.files]
 tmux = "~/.config/tmux"
 
+# cheatsheets for commands
+[cheat.files]
+cheat = "~/.config/cheat"
+
+# tiled window manager
 [i3.files]
 "xinitrc/.xinitrc" = "~/.xinitrc"
 i3 = "~/.config/i3"
@@ -29,6 +51,7 @@ dunst = "~/.config/dunst"
 "bash/.bashrc" = "~/.bashrc"
 "bash/scripts" = "~/.local/bin"
 
+# Terminal filemanager
 [joshuto.files]
 joshuto = "~/.config/joshuto"
 
@@ -36,4 +59,5 @@ joshuto = "~/.config/joshuto"
 "mime/desktop" = "~/.local/share/applications"
 # I don't want applications just rewrite my mimeapps.list without me knowing it
 "mime/mimeapps.list" = {target = "~/.config/mimeapps.list", type = "template"}
+
 [default.variables]

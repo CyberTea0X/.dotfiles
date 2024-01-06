@@ -24,6 +24,10 @@ alias pkgdump='pacman -Qqen > $DOTS/packages/official && pacman -Qqem > $DOTS/pa
 alias pkgdepl='sudo pacman -S --needed - < $DOTS/packages/official && yay -S --needed - < $DOTS/packages/unofficial'
 alias mimesync='cp $HOME/.config/mimeapps.list $DOTS/mime/mimeapps.list'
 
+# GOTO ALIASES
+alias hw='cd ~/Lessons'
+alias dots='cd $DOTS'
+
 # FUNCTIONS
 pkgdiff ()
 {
