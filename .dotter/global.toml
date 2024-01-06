@@ -4,7 +4,7 @@
 [default]
 depends = [
     "i3", "bash", "gedit", "telegram", "mime", "alacritty", "nvim",
-    "rofi", "tms", "tmux", "cheat",
+    "rofi", "tms", "tmux",
     ]
 
 [nondefault]
@@ -30,11 +30,6 @@ tms = "~/.config/tms"
 # terminal multiplexer (multiple windows/splits/sessions in one terminal)
 [tmux.files]
 tmux = "~/.config/tmux"
-
-# cheatsheets for commands
-[cheat.files]
-"cheat/conf.yml" = "~/.config/cheat/conf.yml"
-"cheat/cheatsheets" = {target = "~/.config/cheat/cheatsheets", type="symbolic", recurse=false}
 
 # tiled window manager
 [i3.files]

@@ -23,6 +23,7 @@ alias dotsdd='cd $DOTS && git pull && dotter deploy && cd - > /dev/null'
 alias pkgdump='pacman -Qqen > $DOTS/packages/official && pacman -Qqem > $DOTS/packages/unofficial'
 alias pkgdepl='sudo pacman -S --needed - < $DOTS/packages/official && yay -S --needed - < $DOTS/packages/unofficial'
 alias mimesync='cp $HOME/.config/mimeapps.list $DOTS/mime/mimeapps.list'
+alias fehv='feh --auto-zoom -x --borderless --image-bg black --scale-down --start-at'
 
 # GOTO ALIASES
 alias hw='cd ~/Lessons'
@@ -40,22 +41,6 @@ pkgdiff ()
 mimediff ()
 {
     echo $(diff $DOTS/mime/mimeapps.list $HOME/.config/mimeapps.list)
-}
-
-# cheat command shadowing that caches result and uses cheat.sh
-cheat ()
-{
-    local cheatsheet
-    cheatsheet=$(command cheat $1)
-    local status=$?
-    if [ $status != 0 ]
-    then
-        cheatsheet=$(curl cheat.sh/$1)
-        if [[ "$cheatsheet" != *"Unknown topic"* ]]; then
-            echo "$cheatsheet" > "$HOME/.dotfiles/cheat/cheatsheets/personal/$1"
-        fi
-    fi
-    echo "$cheatsheet"
 }
 
 PS1='[\u@\h \W]\$ '
