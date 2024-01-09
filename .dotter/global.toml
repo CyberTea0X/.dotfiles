@@ -4,11 +4,11 @@
 [default]
 depends = [
     "i3", "bash", "gedit", "telegram", "mime", "alacritty", "nvim",
-    "rofi", "tms", "tmux",
+    "rofi", "tms", "tmux", "joshuto",
     ]
 
 [nondefault]
-depends = ["joshuto"]
+depends = []
 
 # terminal
 [alacritty.files] 
