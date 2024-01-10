@@ -31,3 +31,4 @@ x-scheme-handler/chrome=firefox.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop

@@ -9,10 +9,15 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+#--- APPS ---------------------------------------------------------
+set $browser firefox
+set $terminal alacritty
+# special window class for terminal (it should be different from default class
+set $terminal_spec alacritty
 
-# autostart ssh on ubuntu
-exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+#------------------------------------------------------------------
+
+set $mod Mod1
 
 # Changing language
 exec_always "setxkbmap -model pc104 -option grp:switch,grp:caps_toggle,grp_led:caps us,ru"
@@ -30,13 +35,13 @@ exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # autostart specific programs in specific workspaces
-exec --no-startup-id i3-msg 'workspace $ws1; exec "firefox"'
-exec --no-startup-id i3-msg 'workspace $ws2; exec "alacritty --class alacritty"'
+exec --no-startup-id i3-msg 'workspace $ws1; exec "$browser"'
+exec --no-startup-id i3-msg 'workspace $ws2; exec "$terminal --class $terminal_spec"'
 
 # assign specific workspaces to some apps
-assign [class="firefox"] $ws1
+assign [class="$browser"] $ws1
 # only alacritty and not Alacritty will be opened here
-assign [class="alacritty"] $ws2
+assign [class="$terminal_spec"] $ws2
 
 ## screenshots
 bindsym Print exec --no-startup-id "maim \\"/home/$USER/Pictures/Screenshots/$(date).png\\""
@@ -126,7 +131,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "alacritty"
+bindsym $mod+Return exec "$terminal"
 
 # kill focused window
 bindsym $mod+Shift+q kill
