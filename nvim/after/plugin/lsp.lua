@@ -21,18 +21,18 @@ end)
 
 vim.keymap.set("n", "<leader>vf", function() end, opts)
 
-require 'lspconfig'.rust_analyzer.setup {}
 require 'lspconfig'.tsserver.setup {}
 -- require('flutter-tools').setup({
-    -- lsp = {
-        -- capabilities = lsp.get_capabilities()
-    -- }
+-- lsp = {
+-- capabilities = lsp.get_capabilities()
+-- }
 -- })
 
+require 'lspconfig'.rust_analyzer.setup {}
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    -- Replace the language servers listed here 
+    -- Replace the language servers listed here
     -- with the ones you want to install
     ensure_installed = {
         "jsonls",
@@ -57,6 +57,13 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
     ['<C-y>'] = cmp.mapping.confirm({ select = true }),
     ["<C-Space>"] = cmp.mapping.complete(),
+})
+vim.api.nvim_create_autocmd("BufRead", {
+    group = vim.api.nvim_create_augroup("CmpSourceCargo", { clear = true }),
+    pattern = "Cargo.toml",
+    callback = function()
+        cmp.setup.buffer({ sources = { { name = "crates" } } })
+    end,
 })
 
 lsp.setup()

@@ -26,7 +26,14 @@ require("lazy").setup({
     -- game for being good at vim
     'thePrimeagen/vim-be-good',
     -- helps working with cargo.toml
-    { 'saecki/crates.nvim',              dependencies = { 'nvim-lua/plenary.nvim' } },
+    {
+        'saecki/crates.nvim',
+        tag = 'stable',
+        dependencies = { 'nvim-lua/plenary.nvim' },
+        config = function()
+            require('crates').setup()
+        end,
+    },
     -- translation
     'uga-rosa/translate.nvim',
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },

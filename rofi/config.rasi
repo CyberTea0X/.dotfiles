@@ -1,6 +1,6 @@
 configuration{
-    modi: "window,run,drun,combi";
-    combi-modi: "window,run,drun";
+    modi: "window,drun,run,combi";
+    combi-modi: "window,drun,run";
     show-icons: true;
     terminal: "alacritty";
     drun-display-format: "{icon} {name}";
