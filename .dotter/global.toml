@@ -29,7 +29,7 @@ tms = "~/.config/tms"
 
 # terminal multiplexer (multiple windows/splits/sessions in one terminal)
 [tmux.files]
-tmux = "~/.config/tmux"
+"tmux/tmux.conf" = "~/.config/tmux/tmux.conf"
 
 # tiled window manager
 [i3.files]
