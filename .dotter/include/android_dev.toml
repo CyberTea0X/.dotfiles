@@ -1,0 +1,8 @@
+[bash.files."bash/.bashrc"]
+target = "~/.bashrc"
+type = "template"
+append = """
+# Android development (appended by dotter)
+export ANDROID_HOME="/opt/android-sdk"
+export ANDROID_NDK_ROOT="/opt/android-sdk/ndk-bundle"
+"""

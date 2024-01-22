@@ -10,6 +10,7 @@ depends = [
 [nondefault]
 depends = []
 
+# packet manager for rust programming language
 [cargo.files]
 cargo = "~/.cargo"
 
