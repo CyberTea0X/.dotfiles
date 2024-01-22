@@ -1,9 +1,15 @@
+android-emulator
+android-ndk
+android-platform-31
+android-sdk
+android-sdk-build-tools
+android-sdk-platform-tools
 bibata-cursor-theme-bin
 cbonsai
 cht.sh-git
 dotter-rs
+gocloc-git
 joshuto-bin
-logseq-desktop-bin
 mimeo
 ngrok
 nvim-packer-git

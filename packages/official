@@ -1,6 +1,7 @@
 acpi
 alacritty
 amd-ucode
+android-tools
 base
 base-devel
 clang
@@ -67,6 +68,7 @@ pulseaudio
 pulseaudio-alsa
 python-pip
 python-virtualenv
+qemu-base
 ripgrep
 rofi
 rsync
