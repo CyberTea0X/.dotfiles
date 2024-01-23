@@ -1,4 +1,3 @@
-android-emulator
 android-ndk
 android-platform-31
 android-sdk
@@ -18,5 +17,6 @@ packettracer
 postman-bin
 rofi-greenclip
 rose-pine-gtk-theme-full
+ttf-ms-fonts
 xkb-switch
 yay
