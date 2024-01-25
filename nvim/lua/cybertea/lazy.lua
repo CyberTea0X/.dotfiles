@@ -41,6 +41,8 @@ require("lazy").setup({
     'mbbill/undotree',
     'tpope/vim-fugitive',
     'lukas-reineke/lsp-format.nvim',
+    -- C sharp
+    "Hoffs/omnisharp-extended-lsp.nvim",
     -- just for discord presence, nothing practical
     'andweeb/presence.nvim',
     -- lsp and other for flutter

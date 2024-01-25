@@ -4,11 +4,15 @@
 [default]
 depends = [
     "i3", "bash", "gedit", "telegram", "mime", "alacritty", "nvim",
-    "rofi", "tms", "tmux", "joshuto", "cargo"
+    "rofi", "tms", "tmux", "joshuto", "cargo", "godot"
     ]
 
 [nondefault]
 depends = []
+
+# game engine
+[godot.files]
+godot = "~/.config/godot"
 
 # packet manager for rust programming language
 [cargo.files]

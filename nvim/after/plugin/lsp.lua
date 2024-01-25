@@ -28,7 +28,22 @@ require 'lspconfig'.tsserver.setup {}
 -- }
 -- })
 
+require 'lspconfig'.omnisharp.setup({
+    cmd = { vim.fn.stdpath("data") .. "/mason/packages/omnisharp/omnisharp" },
+    handlers = {
+        ["textDocument/definition"] = require("omnisharp_extended").handler,
+    },
+    enable_editorconfig_support = true,
+    enable_ms_build_load_projects_on_demand = false,
+    enable_roslyn_analyzers = true,
+    organize_imports_on_format = true,
+    enable_import_completion = true,
+    sdk_include_prereleases = true,
+    analyze_open_documents_only = true,
+})
+
 require 'lspconfig'.rust_analyzer.setup {}
+
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
@@ -43,6 +58,7 @@ require('mason-lspconfig').setup({
         'pyright',
         'rust_analyzer',
         'gopls',
+        'omnisharp',
         --'svelte',
     },
     handlers = {
