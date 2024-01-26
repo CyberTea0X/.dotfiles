@@ -3,16 +3,13 @@
 
 [default]
 depends = [
-    "i3", "bash", "gedit", "telegram", "mime", "alacritty", "nvim",
-    "rofi", "tms", "tmux", "joshuto", "cargo", "godot"
+    "i3", "bash", "gedit", "mime", "alacritty", "nvim",
+    "rofi", "tms", "tmux", "joshuto", "cargo"
     ]
 
+# all packages not included in the default package
 [nondefault]
 depends = []
-
-# game engine
-[godot.files]
-godot = "~/.config/godot"
 
 # packet manager for rust programming language
 [cargo.files]
@@ -47,9 +44,9 @@ polybar = "~/.config/polybar"
 picom = "~/.config/picom"
 dunst = "~/.config/dunst"
 
-[telegram.files]
+# graphical text editor (like notepad for linux)
 [gedit.files]
-"soft_themes/gedit" = "~/.local/share/gedit/styles"
+gedit = "~/.local/share/gedit/styles"
 
 [bash.files]
 "bash/.bashrc" = "~/.bashrc"
