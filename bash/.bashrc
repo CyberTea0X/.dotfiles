@@ -49,6 +49,9 @@ PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.cargo/bin
+# go install binaries
+export PATH=$PATH:~/go/bin
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
