@@ -4,7 +4,7 @@
 [default]
 depends = [
     "i3", "bash", "gedit", "mime", "alacritty", "nvim",
-    "rofi", "tms", "tmux", "joshuto", "cargo"
+    "rofi", "tms", "tmux", "joshuto", "cargo", "polybar"
     ]
 
 # all packages not included in the default package
@@ -40,9 +40,15 @@ tms = "~/.config/tms"
 [i3.files]
 "xinitrc/.xinitrc" = "~/.xinitrc"
 i3 = "~/.config/i3"
-polybar = "~/.config/polybar"
 picom = "~/.config/picom"
 dunst = "~/.config/dunst"
+
+[polybar.files]
+polybar = "~/.config/polybar"
+
+[polybar.variables]
+# additional modules right (prepend to existing modules)
+modules_right = ""
 
 # graphical text editor (like notepad for linux)
 [gedit.files]
