@@ -24,8 +24,10 @@ alias dotse='nvim $DOTS/.dotter/global.toml'
 alias pkgdump='pacman -Qqen > $DOTS/packages/official && pacman -Qqem > $DOTS/packages/unofficial'
 alias pkgdepl='sudo pacman -S --needed - < $DOTS/packages/official && yay -S --needed - < $DOTS/packages/unofficial'
 alias mimesync='cp $HOME/.config/mimeapps.list $DOTS/mime/mimeapps.list'
+alias mimediff='echo $(diff $DOTS/mime/mimeapps.list $HOME/.config/mimeapps.list)'
 alias fehv='feh --auto-zoom -x --borderless --image-bg black --scale-down --start-at'
 alias cheat='cht.sh'
+alias xsc="xclip -selection clipboard"
 
 # GOTO ALIASES
 alias hw='cd ~/Lessons'
@@ -38,11 +40,6 @@ pkgdiff ()
     echo $(diff $DOTS/packages/official <(pacman -Qqen))
     echo "Unofficial packages:"
     echo $(diff $DOTS/packages/unofficial <(pacman -Qqem))
-}
-
-mimediff ()
-{
-    echo $(diff $DOTS/mime/mimeapps.list $HOME/.config/mimeapps.list)
 }
 
 PS1='[\u@\h \W]\$ '
