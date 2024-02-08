@@ -59,6 +59,7 @@ require('mason-lspconfig').setup({
         'rust_analyzer',
         'gopls',
         'omnisharp',
+        --'taplo',
         --'svelte',
     },
     handlers = {
