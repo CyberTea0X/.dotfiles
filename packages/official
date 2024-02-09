@@ -71,6 +71,7 @@ pipewire-pulse
 polybar
 print-manager
 pulseaudio-alsa
+pyenv
 python-pip
 python-pygame
 python-pyqt5
