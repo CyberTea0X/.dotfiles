@@ -147,9 +147,13 @@ bindsym $mod+d exec --no-startup-id bash -c "rofi -show combi -show-icons"
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# clipcat
+bindsym $mod+g exec clipcat-menu insert
+exec --no-startup-id clipcatd    
+
 # greenclip
-bindsym $mod+g exec --no-startup-id "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
-exec --no-startup-id "greenclip daemon"
+#bindsym $mod+g exec --no-startup-id "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
+#exec --no-startup-id "greenclip daemon"
 
 # change focus
 bindsym $mod+j focus left

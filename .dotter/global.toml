@@ -3,20 +3,35 @@
 
 [default]
 depends = [
-    "i3", "bash", "gedit", "mime", "alacritty", "nvim",
-    "rofi", "tms", "tmux", "joshuto", "cargo", "polybar"
-    ]
+    "i3",
+    "bash",
+    "gedit",
+    "mime",
+    "alacritty",
+    "nvim",
+    "rofi",
+    "tms",
+    "tmux",
+    "joshuto",
+    "cargo",
+    "polybar",
+    "clipcat",
+]
 
 # all packages not included in the default package
 [nondefault]
 depends = []
+
+# clipboard manager written in rust
+[clipcat.files]
+clipcat = "~/.config/clipcat"
 
 # packet manager for rust programming language
 [cargo.files]
 cargo = "~/.cargo"
 
 # terminal
-[alacritty.files] 
+[alacritty.files]
 alacritty = "~/.config/alacritty"
 
 # terminal editor
@@ -65,6 +80,6 @@ joshuto = "~/.config/joshuto"
 [mime.files]
 "mime/desktop" = "~/.local/share/applications"
 # I don't want applications just rewrite my mimeapps.list without me knowing it
-"mime/mimeapps.list" = {target = "~/.config/mimeapps.list", type = "template"}
+"mime/mimeapps.list" = { target = "~/.config/mimeapps.list", type = "template" }
 
 [default.variables]
