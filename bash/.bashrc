@@ -44,7 +44,8 @@ pkgdiff ()
 }
 
 open () {
-  nohup xdg-open "$*" > /dev/null 2>&1
+  nohup xdg-open "$*" > /dev/null 2>&1 &
+  disown
 }
 
 PS1='[\u@\h \W]\$ '
