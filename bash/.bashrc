@@ -43,6 +43,10 @@ pkgdiff ()
     echo $(diff $DOTS/packages/unofficial <(pacman -Qqem))
 }
 
+open () {
+  nohup xdg-open "$*" > /dev/null 2>&1
+}
+
 PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:~/.local/bin
