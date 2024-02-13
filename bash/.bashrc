@@ -48,6 +48,16 @@ open () {
   disown
 }
 
+hyperlink () {
+    echo "
+    <html>
+    <head>
+    <meta http-equiv=\"refresh\" content=\"0; url=$1\" />
+    </head>
+    </html>
+    " >  $2.html
+}
+
 PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:~/.local/bin
