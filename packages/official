@@ -71,6 +71,7 @@ picom
 pipewire-pulse
 polybar
 print-manager
+progress
 pulseaudio-alsa
 pyenv
 python-pip
@@ -89,6 +90,7 @@ steam
 steam-native-runtime
 sudo
 syncthing
+sysstat
 telegram-desktop
 tiled
 tmux
