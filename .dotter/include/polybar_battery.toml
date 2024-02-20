@@ -16,8 +16,33 @@ full-at = 99
 ; New in version 3.6.0
 low-at = 5
 
-format-low = <animation-low>
-format-charging = 󰂄
+animation-low-0 = !
+animation-low-1 = 
+animation-low-framerate = 1000
+
+label-full = 󱈏 %percentage%%
+format-full = <label-full>
+
+label-charging = 󰂄 %percentage%%
+format-charging = <label-charging>
+
+ramp-capacity-0 = 󰁺
+ramp-capacity-1 = 󰁻
+ramp-capacity-2 = 󰁼
+ramp-capacity-3 = 󰁽
+ramp-capacity-4 = 󰁾
+ramp-capacity-5 = 󰁿
+ramp-capacity-6 = 󰂀
+ramp-capacity-7 = 󰂁
+ramp-capacity-8 = 󰂂
+ramp-capacity-9 = 󰁹
+
+label-discharging = %percentage%%
+format-discharging = <ramp-capacity> <label-discharging>
+
+label-low = 󰂎 %percentage%%
+format-low = <animation-low> <label-low>
+
 
 ; Use the following command to list batteries and adapters:
 ; $ ls -1 /sys/class/power_supply/
@@ -34,8 +59,4 @@ adapter = ADP1
 ;
 ; Default: 5
 poll-interval = 5
-
-animation-low-0 = !
-animation-low-1 = 
-animation-low-framerate = 1000
 """
