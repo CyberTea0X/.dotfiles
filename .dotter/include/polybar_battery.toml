@@ -1,5 +1,5 @@
 [polybar.variables]
-modules_right="battery"
+modules_right = "battery"
 [polybar.files."polybar/modules.ini"]
 target = "~/.config/polybar/modules.ini"
 type = "template"
@@ -16,6 +16,9 @@ full-at = 99
 ; New in version 3.6.0
 low-at = 5
 
+format-low = <animation-low>
+format-charging = 󰂄
+
 ; Use the following command to list batteries and adapters:
 ; $ ls -1 /sys/class/power_supply/
 battery = BAT1
@@ -31,4 +34,8 @@ adapter = ADP1
 ;
 ; Default: 5
 poll-interval = 5
+
+animation-low-0 = !
+animation-low-1 = 
+animation-low-framerate = 1000
 """
