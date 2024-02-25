@@ -29,6 +29,7 @@ alias mimediff='echo $(diff $DOTS/mime/mimeapps.list $HOME/.config/mimeapps.list
 alias fehv='feh --auto-zoom -x --borderless --image-bg black --scale-down --start-at'
 alias cheat='cht.sh'
 alias xsc="xclip -selection clipboard"
+alias secrets="vim ~/Important/Info/Info.txt"
 
 # GOTO ALIASES
 alias hw='cd ~/Lessons'
