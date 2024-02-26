@@ -1,0 +1,7 @@
+[bash.files."bash/.bashrc"]
+target = "~/.bashrc"
+type = "template"
+append = """
+# Check if my RAM card is randomly turned off
+badmem
+"""

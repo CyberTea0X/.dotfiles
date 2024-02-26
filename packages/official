@@ -13,6 +13,7 @@ dbeaver
 dex
 dhcpcd
 discord
+dmidecode
 dnsmasq
 docker
 docker-buildx
@@ -42,6 +43,7 @@ lib32-gamemode
 linux
 linux-firmware
 linux-headers
+lshw
 lutris
 lxappearance
 maim
