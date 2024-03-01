@@ -2,8 +2,8 @@
 # On my pc one of my RAM cards can disable after boot
 # So i need a way to detect it (on windows had the same issue)
 RAM=$(sudo cat /proc/meminfo | grep -oP "MemTotal:\ *\K[0-9]*")
-LOWRAM="16319596"
-if [ "$RAM" = "$LOWRAM" ]; then 
+GIB32="32000000"
+if (("$RAM" < "$GIB32")); then 
     echo "one of RAM cards randomly disabled:"
     free
     echo "Reboot?(y = yes)"
