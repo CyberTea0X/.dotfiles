@@ -38,35 +38,32 @@ open () {
   nohup xdg-open "$*" > /dev/null 2>&1 &
   disown
 }
-
 # FUNCTIONS
 
 pkgdepl () {
     local P=$DOTS/packages
-    local OFFICIAL="$(uniq -u <(sort $P/nosync $P/official <(pacman -Qqen)))"
+    local OFFICIAL="$(comm -23 <(uniq -u <(sort $P/official <(pacman -Qqen))) <(sort $P/nosync))"
     if [ ! -z "$OFFICIAL" ]; then
         sudo pacman -S --needed $OFFICIAL 
     fi
-    local UNOFFICIAL="$(uniq -u <(sort $P/nosync $P/unofficial <(pacman -Qqem)))"
+    local UNOFFICIAL="$(comm -23 <(uniq -u <(sort $P/unofficial <(pacman -Qqem))) <(sort $P/nosync))"
     if [ ! -z "$UNOFFICIAL" ]; then
         yay -S --needed $UNOFFICIAL
     fi
 }
 
-pkgdump ()
-{
+pkgdump () {
     local P=$DOTS/packages
-    uniq -u <(sort $P/nosync <(pacman -Qqen)) > $P/official
-    uniq -u <(sort $P/nosync <(pacman -Qqem)) > $P/unofficial
+    comm -23 <(uniq -u <(sort $P/official <(pacman -Qqen))) <(sort $P/nosync) > $P/official
+    comm -23 <(uniq -u <(sort $P/unofficial <(pacman -Qqem))) <(sort $P/nosync) > $P/unofficial
 }
 
-pkgdiff ()
-{
+pkgdiff () {
     local P=$DOTS/packages
     echo "Official packages:"
-    uniq -u <(sort $P/nosync $P/official <(pacman -Qqen))
+    comm -23 <(uniq -u <(sort $P/official <(pacman -Qqen))) <(sort $P/nosync)
     echo "Unofficial packages:"
-    uniq -u <(sort $P/nosync $P/unofficial <(pacman -Qqem))
+    comm -23 <(uniq -u <(sort $P/unofficial <(pacman -Qqem))) <(sort $P/nosync)
 }
 
 hyperlink () {
