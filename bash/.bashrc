@@ -22,10 +22,9 @@ alias dotsd='cd $DOTS && dotter deploy && cd - > /dev/null'
 alias dotsdd='cd $DOTS && git pull && dotter deploy && cd - > /dev/null'
 alias dotse='nvim $DOTS/.dotter/global.toml'
 alias dotsel='nvim $DOTS/.dotter/local.toml'
-alias pkgdump='pacman -Qqen > $DOTS/packages/official && pacman -Qqem > $DOTS/packages/unofficial'
-alias pkgdepl='sudo pacman -S --needed - < $DOTS/packages/official && yay -S --needed - < $DOTS/packages/unofficial'
 alias mimesync='cp $HOME/.config/mimeapps.list $DOTS/mime/mimeapps.list'
 alias mimediff='echo $(diff $DOTS/mime/mimeapps.list $HOME/.config/mimeapps.list)'
+alias pkgclean='pacman -Qdtq | pacman -Rs -'
 alias fehv='feh --auto-zoom -x --borderless --image-bg black --scale-down --start-at'
 alias cheat='cht.sh'
 alias xsc="xclip -selection clipboard"
@@ -35,18 +34,39 @@ alias secrets="vim ~/Important/Info/Info.txt"
 alias hw='cd ~/Lessons'
 alias dots='cd $DOTS'
 
-# FUNCTIONS
-pkgdiff ()
-{
-    echo "Official packages:"
-    echo $(diff $DOTS/packages/official <(pacman -Qqen))
-    echo "Unofficial packages:"
-    echo $(diff $DOTS/packages/unofficial <(pacman -Qqem))
-}
-
 open () {
   nohup xdg-open "$*" > /dev/null 2>&1 &
   disown
+}
+
+# FUNCTIONS
+
+pkgdepl () {
+    local P=$DOTS/packages
+    local OFFICIAL="$(uniq -u <(sort $P/nosync $P/official <(pacman -Qqen)))"
+    if [ ! -z "$OFFICIAL" ]; then
+        sudo pacman -S --needed $OFFICIAL 
+    fi
+    local UNOFFICIAL="$(uniq -u <(sort $P/nosync $P/unofficial <(pacman -Qqem)))"
+    if [ ! -z "$UNOFFICIAL" ]; then
+        yay -S --needed $UNOFFICIAL
+    fi
+}
+
+pkgdump ()
+{
+    local P=$DOTS/packages
+    uniq -u <(sort $P/nosync <(pacman -Qqen)) > $P/official
+    uniq -u <(sort $P/nosync <(pacman -Qqem)) > $P/unofficial
+}
+
+pkgdiff ()
+{
+    local P=$DOTS/packages
+    echo "Official packages:"
+    uniq -u <(sort $P/nosync $P/official <(pacman -Qqen))
+    echo "Unofficial packages:"
+    uniq -u <(sort $P/nosync $P/unofficial <(pacman -Qqem))
 }
 
 hyperlink () {
