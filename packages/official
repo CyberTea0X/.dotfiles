@@ -10,7 +10,6 @@ clipcat
 cmake
 cmatrix
 cronie
-cups
 dbeaver
 dex
 dhcpcd
@@ -35,15 +34,14 @@ grub
 handlr-regex
 hplip
 htop
-i3-wm
 i3blocks
 i3lock
+i3-wm
 imagemagick
 inkscape
 iptables-nft
 kolourpaint
 lib32-gamemode
-lib32-nvidia-utils
 linux
 linux-firmware
 linux-headers
@@ -89,7 +87,7 @@ qemu-full
 ripgrep
 rofi
 rsync
-sane
+rustup
 sof-firmware
 steam
 steam-native-runtime
@@ -109,6 +107,7 @@ virt-manager
 vlc
 vulkan-tools
 wget
+which
 wine
 wine-gecko
 wine-mono
@@ -123,9 +122,9 @@ xdotool
 xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
-xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
+xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
@@ -156,6 +155,7 @@ xorg-xlsatoms
 xorg-xlsclients
 xorg-xmodmap
 xorg-xpr
+xorg-xrandr
 xorg-xrdb
 xorg-xrefresh
 xorg-xsetroot

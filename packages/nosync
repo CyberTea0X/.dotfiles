@@ -1,7 +1,10 @@
 nvidia
 nvidia-settings
 nvidia-utils
+lib32-nvidia-utils
 opencl-nvidia
+cups
+sane
 print-manager
 a4tech-bloody-driver-git
 bluez

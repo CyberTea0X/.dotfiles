@@ -44,11 +44,11 @@ pkgdepl () {
     local P=$DOTS/packages
     local OFFICIAL="$(comm -23 <(uniq -u <(sort $P/official <(pacman -Qqen))) <(sort $P/nosync))"
     if [ ! -z "$OFFICIAL" ]; then
-        sudo pacman -S --needed $OFFICIAL 
+        sudo pacman -S --needed --asexplicit $OFFICIAL 
     fi
     local UNOFFICIAL="$(comm -23 <(uniq -u <(sort $P/unofficial <(pacman -Qqem))) <(sort $P/nosync))"
     if [ ! -z "$UNOFFICIAL" ]; then
-        yay -S --needed $UNOFFICIAL
+        yay -S --needed --asexplicit $UNOFFICIAL
     fi
 }
 
