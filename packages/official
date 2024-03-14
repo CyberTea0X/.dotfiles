@@ -32,13 +32,12 @@ gimp
 git
 go
 grub
-handlr
+handlr-regex
 hplip
 htop
 i3-wm
 i3blocks
 i3lock
-i3status
 imagemagick
 inkscape
 iptables-nft
