@@ -126,11 +126,9 @@ xorg-docs
 xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
-xorg-fonts-encodings
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
-xorg-server-common
 xorg-server-devel
 xorg-server-xephyr
 xorg-server-xnest
@@ -158,11 +156,8 @@ xorg-xlsatoms
 xorg-xlsclients
 xorg-xmodmap
 xorg-xpr
-xorg-xprop
-xorg-xrandr
 xorg-xrdb
 xorg-xrefresh
-xorg-xset
 xorg-xsetroot
 xorg-xvinfo
 xorg-xwayland
