@@ -57,6 +57,7 @@ nasm
 neofetch
 neovim
 neovim-qt
+netctl
 networkmanager
 ninja
 noto-fonts
@@ -83,7 +84,6 @@ python-pygame
 python-pyqt5
 python-virtualenv
 qbittorrent
-qemu-base
 qemu-full
 ripgrep
 rofi
@@ -105,6 +105,7 @@ udisks2
 unzip
 vim
 virt-manager
+virtualbox
 vlc
 vulkan-tools
 wget
@@ -167,5 +168,6 @@ xorg-xwininfo
 xorg-xwud
 xss-lock
 yt-dlp
+zerotier-one
 zip
 zoxide

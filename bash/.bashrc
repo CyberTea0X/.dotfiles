@@ -5,11 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# AUTOSTART X
-if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-  exec startx
-fi
-
 # VARIABLES
 export DOTS="$HOME/.dotfiles"
 export DOTSB="$DOTS/bash/.bashrc"

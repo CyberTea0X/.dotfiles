@@ -71,6 +71,7 @@ gedit = "~/.local/share/gedit/styles"
 
 [bash.files]
 "bash/.bashrc" = "~/.bashrc"
+"bash/.bash_profile" = "~/.bash_profile"
 "bash/scripts" = "~/.local/bin"
 
 # Terminal filemanager
