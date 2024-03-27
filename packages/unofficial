@@ -3,6 +3,7 @@ android-platform-31
 android-sdk
 android-sdk-build-tools
 android-sdk-platform-tools
+bibata-cursor-theme-bin
 bun-bin
 cbonsai
 cht.sh-git
@@ -15,8 +16,6 @@ nvim-packer-git
 onlyoffice-bin
 packettracer
 postman-bin
-qbittorrent-cli-bin
-rose-pine-cursor
 rose-pine-gtk-theme-full
 rustdesk-bin
 ttf-ms-fonts
