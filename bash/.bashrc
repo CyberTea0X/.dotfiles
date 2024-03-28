@@ -23,7 +23,6 @@ alias pkgclean='pacman -Qdtq | pacman -Rs -'
 alias fehv='feh --auto-zoom -x --borderless --image-bg black --scale-down --start-at'
 alias cheat='cht.sh'
 alias xsc="xclip -selection clipboard"
-alias secrets="vim ~/Important/Info/Info.txt"
 alias jo="joshuto"
 
 # GOTO ALIASES
