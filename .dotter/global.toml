@@ -5,7 +5,6 @@
 depends = [
     "i3",
     "bash",
-    "gedit",
     "mime",
     "alacritty",
     "nvim",
