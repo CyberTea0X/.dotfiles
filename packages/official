@@ -34,17 +34,15 @@ grub
 handlr-regex
 hplip
 htop
-i3-wm
 i3blocks
 i3lock
+i3-wm
 imagemagick
 inkscape
 iptables-nft
 kolourpaint
 leafpad
 lib32-gamemode
-liblzf
-libtpms
 linux
 linux-firmware
 linux-headers
@@ -87,9 +85,7 @@ python-pygame
 python-pyqt5
 python-virtualenv
 qbittorrent
-qemu-base
 qemu-full
-qt5-tools
 ripgrep
 rofi
 rsync
@@ -103,7 +99,6 @@ sysstat
 telegram-desktop
 tiled
 tmux
-traceroute
 tree
 ttf-nerd-fonts-symbols
 udiskie
@@ -111,8 +106,6 @@ udisks2
 unzip
 vim
 virt-manager
-virtualbox
-virtualbox-host-modules-arch
 vlc
 vulkan-tools
 wget
@@ -131,9 +124,9 @@ xdotool
 xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
-xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
+xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
