@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+PS1="\e[0;34m[\u@\h \W]\$ \e[m"
+
 # VARIABLES
 export DOTS="$HOME/.dotfiles"
 export DOTSB="$DOTS/bash/.bashrc"
@@ -71,7 +73,6 @@ hyperlink () {
     " >  $2.html
 }
 
-PS1='[\u@\h \W]\$ '
 
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.cargo/bin
