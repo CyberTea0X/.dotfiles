@@ -5,9 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1="[\u@\h \W]\$ "
+PS1='[\u@\h \W]\$ '
 # Add colors
-PS1="\e[1;34m$PS1\e[m"
+PS1="\[\e[1;34m\]$PS1\[\e[m\]"
 
 # VARIABLES
 export DOTS="$HOME/.dotfiles"
