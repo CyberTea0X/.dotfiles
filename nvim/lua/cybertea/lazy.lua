@@ -18,11 +18,9 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     -- theme
-    { 'rose-pine/neovim',    name = 'rose-pine' },
+    { 'rose-pine/neovim',                name = 'rose-pine' },
     -- auto detecting indent style
     'nmac427/guess-indent.nvim',
-    -- tabnine
-    { 'codota/tabnine-nvim', build = "./dl_binaries.sh" },
     -- game for being good at vim
     'thePrimeagen/vim-be-good',
     -- helps working with cargo.toml
