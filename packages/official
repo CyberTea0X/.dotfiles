@@ -19,6 +19,7 @@ dmidecode
 dnsmasq
 docker
 docker-buildx
+docker-compose
 dunst
 efibootmgr
 entr

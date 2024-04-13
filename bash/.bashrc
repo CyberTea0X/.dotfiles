@@ -28,6 +28,13 @@ alias fehv='feh --auto-zoom -x --borderless --image-bg black --scale-down --star
 alias cheat='cht.sh'
 alias xsc="xclip -selection clipboard"
 alias jo="joshuto"
+alias animedit="nvim ~/Obsidian/Anime-and-films/anime.md"
+alias seriousbg="feh --bg-scale ~/Pictures/bg/arch-kiss-blue.png"
+alias syncthing-gui="xdg-open http://127.0.0.1:8384"
+
+alias dockeron="sudo systemctl start docker.service"
+alias mysqlon="sudo systemctl start docker.service"
+alias runmyavd="emulator -avd test"
 
 # GOTO ALIASES
 alias hw='cd ~/Lessons'

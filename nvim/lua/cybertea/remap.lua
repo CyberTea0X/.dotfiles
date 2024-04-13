@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
+
+-- :Ex and :Rex remap
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pr", vim.cmd.Rex)
 
 -- to move selected lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -16,7 +19,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- greatest remap ever
 -- pastes over selected text and selected text goes into the void register
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
@@ -24,15 +26,13 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("x", "<leader><leader>p", '"*p')
 vim.keymap.set("n", "<leader><leader>p", '"*p')
 
--- next greatest remap ever : asbjornHaland
 -- allows to yank into the system register
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- deletes into the void register
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
--- This is going to get me cancelled
 -- just for ctrl+c to work properly
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
