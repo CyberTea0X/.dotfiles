@@ -1,0 +1,3 @@
+#!/bin/bash
+nmcli c d bridge-slave-eno1
+nmcli c d bridge-br0
