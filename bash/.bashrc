@@ -16,11 +16,12 @@ export DOTSB="$DOTS/bash/.bashrc"
 # ALIASES
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias dotsu='git -C $DOTS add $DOTS && git -C $DOTS commit -m "update .dotfiles" && git -C $DOTS push'
-alias dotsd='cd $DOTS && dotter deploy && cd - > /dev/null'
-alias dotsdd='cd $DOTS && git pull && dotter deploy && cd - > /dev/null'
-alias dotse='nvim $DOTS/.dotter/global.toml'
-alias dotsel='nvim $DOTS/.dotter/local.toml'
+alias dotsu='bash -c "git -C $DOTS add $DOTS && git -C $DOTS commit -m \"update .dotfiles\" && git -C $DOTS push"'
+alias dotsd='bash -c "cd $DOTS && dotter deploy && cd - > /dev/null"'
+alias dotsdf='bash -c "cd $DOTS && dotter deploy --force && cd - > /dev/null"'
+alias dotsdd='bash -c "cd $DOTS && git pull && dotter deploy && cd - > /dev/null"'
+alias dotse='bash -c "nvim $DOTS/.dotter/global.toml"'
+alias dotsel='bash -c "nvim $DOTS/.dotter/local.toml"'
 alias mimesync='cp $HOME/.config/mimeapps.list $DOTS/mime/mimeapps.list'
 alias mimediff='echo $(diff $DOTS/mime/mimeapps.list $HOME/.config/mimeapps.list)'
 alias pkgclean='pacman -Qdtq | pacman -Rs -'
@@ -52,11 +53,11 @@ pkgdepl () {
     local P=$DOTS/packages
     local OFFICIAL="$(comm -23 <(uniq -u <(sort $P/official <(pacman -Qqen))) <(sort $P/nosync))"
     if [ ! -z "$OFFICIAL" ]; then
-        sudo pacman -S --needed --asexplicit $OFFICIAL 
+        sudo pacman -S --needed $OFFICIAL 
     fi
     local UNOFFICIAL="$(comm -23 <(uniq -u <(sort $P/unofficial <(pacman -Qqem))) <(sort $P/nosync))"
     if [ ! -z "$UNOFFICIAL" ]; then
-        yay -S --needed --asexplicit $UNOFFICIAL
+        yay -S --needed $UNOFFICIAL
     fi
 }
 
@@ -74,6 +75,10 @@ pkgdiff () {
     comm -23 <(uniq -u <(sort $P/unofficial <(pacman -Qqem))) <(sort $P/nosync)
 }
 
+pkgdeps () {
+    pacman -Qi $1 | grep -E "Required\ By|Name"
+}
+
 hyperlink () {
     echo "
     <html>
@@ -89,8 +94,3 @@ export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.cargo/bin
 # go install binaries
 export PATH=$PATH:~/go/bin
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
