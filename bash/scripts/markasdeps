@@ -1,9 +1,9 @@
 #!/bin/bash
 cat $1 | while read package; do 
-pacman -Qi $package | grep -q "Explicitly installed"
+pacman -Qi "$package" | grep -q "Explicitly installed"
 if [ $? -eq 0 ]; then
     echo "skipping $package"
 else
-    echo "mark $package"
+    read "Mark package $package?"
 fi
 done
