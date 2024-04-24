@@ -9,3 +9,5 @@ print-manager
 a4tech-bloody-driver-git
 bluez
 bluez-utils
+blueman
+gnome-bluetooth
