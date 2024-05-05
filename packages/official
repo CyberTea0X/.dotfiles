@@ -6,6 +6,7 @@ android-file-transfer
 android-tools
 base
 base-devel
+bc
 clang
 cmake
 cmatrix
@@ -31,6 +32,7 @@ gimp
 git
 go
 grub
+gtk-engine-murrine
 handlr-regex
 hplip
 htop
@@ -40,6 +42,7 @@ i3-wm
 imagemagick
 inkscape
 iptables-nft
+jq
 kolourpaint
 leafpad
 lib32-gamemode
@@ -94,6 +97,7 @@ pcmanfm-gtk3
 phodav
 picom
 pipewire-pulse
+playerctl
 polybar
 progress
 pulseaudio-alsa

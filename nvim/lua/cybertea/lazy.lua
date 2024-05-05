@@ -18,7 +18,9 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     -- theme
-    { 'rose-pine/neovim',                name = 'rose-pine' },
+    {
+        "folke/tokyonight.nvim",
+    },
     -- auto detecting indent style
     'nmac427/guess-indent.nvim',
     -- game for being good at vim
@@ -93,4 +95,4 @@ require("lazy").setup({
     },
     --
 })
-vim.cmd('colorscheme rose-pine')
+vim.cmd('colorscheme tokyonight')
