@@ -15,7 +15,7 @@ configuration{
     sidebar-mode: true;
 }
 
-@theme "rose-pine-custom"
+@theme "tokyo-night-custom"
 
 #window {
 	background-color: @background;
