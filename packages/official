@@ -7,7 +7,6 @@ android-tools
 base
 base-devel
 clang
-clipcat
 cmake
 cmatrix
 cronie
@@ -117,7 +116,6 @@ spice-gtk
 spice-protocol
 spice-vdagent
 steam
-steam-native-runtime
 sudo
 syncthing
 sysstat
