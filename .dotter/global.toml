@@ -14,7 +14,6 @@ depends = [
     "joshuto",
     "cargo",
     "polybar",
-    "clipcat",
 ]
 
 # all packages not included in the default package

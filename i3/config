@@ -62,13 +62,14 @@ font pango:monospace 8
 default_border pixel 0
 
 #--- WINDOW FRAME SIZE -------------------------------------------
-for_window [tiling] border pixel 1
-for_window [floating] border pixel 1
+for_window [tiling] border pixel 0
+for_window [floating] border pixel 0
 
 #--- WINDOW GAPS
 # gaps inner|outer|horizontal|vertical|top|right|bottom|left
 gaps top 2
-gaps outer 10
+gaps outer 5
+gaps inner 5
 #--- FLOATING APPLICATIONS ---------------------------------------
 # android vms
 for_window [title=".*Emulator.*"] floating enable
@@ -148,12 +149,12 @@ bindsym $mod+d exec --no-startup-id bash ~/.dotfiles/i3/scripts/rofi.sh
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # clipcat
-bindsym $mod+g exec clipcat-menu insert
-exec --no-startup-id clipcatd    
+#bindsym $mod+g exec clipcat-menu insert
+#exec --no-startup-id clipcatd    
 
 # greenclip
-#bindsym $mod+g exec --no-startup-id "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
-#exec --no-startup-id "greenclip daemon"
+bindsym $mod+g exec --no-startup-id "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"
+exec --no-startup-id "greenclip daemon"
 
 # change focus
 bindsym $mod+j focus left
