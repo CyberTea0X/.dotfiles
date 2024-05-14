@@ -1,7 +1,7 @@
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
-vim.opt.relativenumber = true
+--vim.opt.relativenumber = true
 
 vim.api.nvim_set_option('keymap', 'russian-jcukenwin')
 
