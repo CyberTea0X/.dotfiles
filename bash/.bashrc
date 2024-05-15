@@ -47,6 +47,9 @@ open () {
   nohup xdg-open "$*" > /dev/null 2>&1 &
   disown
 }
+openlatest() {
+    open $(ls -t | head -n1)
+}
 # FUNCTIONS
 
 pkgdepl () {
