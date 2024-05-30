@@ -39,6 +39,8 @@ alias mysqlon="sudo systemctl start docker.service"
 alias runmyavd="emulator -avd test"
 alias netrestart="sudo systemctl restart NetworkManager"
 
+alias shoot3s="sleep 3s && maim \\"/home/$USER/Pictures/Screenshots/$(date).png\\""
+
 # GOTO ALIASES
 alias hw='cd ~/Lessons'
 alias dots='cd $DOTS'
