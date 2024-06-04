@@ -1,8 +1,8 @@
 vim.g.mapleader = " "
 
--- :Ex and :Rex remap
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>pr", vim.cmd.Rex)
+-- open oil nvim file explorer
+vim.keymap.set("n", "<leader>pv", vim.cmd.Oil)
+--vim.keymap.set("n", "<leader>pr", vim.cmd.Rex)
 
 -- to move selected lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

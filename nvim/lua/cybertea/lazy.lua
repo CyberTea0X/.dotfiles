@@ -17,6 +17,25 @@ require("lazy").setup({
         tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
+
+    -- some features for golang
+    {
+        "olexsmir/gopher.nvim",
+        ft = "go",
+        config = function(_, opts)
+            require("gopher").setup(opts)
+        end,
+        build = function()
+            vim.cmd [[silent! GoInstallDeps]]
+        end
+    },
+    -- file explorer that lets you edit your filesystem like a normal nvim buffer
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        -- Optional dependencies
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
     -- theme
     {
         "folke/tokyonight.nvim",
@@ -57,6 +76,19 @@ require("lazy").setup({
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
+    -- snippets
+    { "rafamadriz/friendly-snippets" },
+    { 'saadparwaiz1/cmp_luasnip' },
+    {
+        "L3MON4D3/LuaSnip",
+        dependencies = { "rafamadriz/friendly-snippets" },
+        -- install jsregexp (optional!).
+        build = "make install_jsregexp"
+    },
+    {
+        "hrsh7th/nvim-cmp",
+        event = { "InsertEnter", "CmdlineEnter" },
+    },
     -- lsp
     {
         'VonHeikemen/lsp-zero.nvim',
