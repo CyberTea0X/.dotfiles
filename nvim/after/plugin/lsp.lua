@@ -60,7 +60,7 @@ require('mason-lspconfig').setup({
         'gopls',         -- Golang lsp
         'omnisharp',     -- C# lsp
         'taplo',         -- TOML lsp
-        'yamlls'         -- YAML lsp
+        'yamlls',        -- YAML lsp
         --'svelte',
     },
     handlers = {

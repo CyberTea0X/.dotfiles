@@ -52,6 +52,7 @@ keymap = [
     { keys = ["j"], commands = ["cursor_move_down"] },
     { keys = ["k"], commands = ["cursor_move_up"] },
     { keys = ["h"], commands = ["cd .."] },
+    { keys = ["-"], commands = ["cd .."] },
     { keys = ["l"], commands = ["open"] },
     { keys = ["g", "g"], commands = ["cursor_move_home"] },
     { keys = ["G"], commands = ["cursor_move_end"] },

@@ -12,6 +12,7 @@ inode/directory=userapp-zip -r-BTQ9F2.desktop;pcmanfm.desktop;
 text/html=firefox.desktop;
 x-scheme-handler/chrome=firefox.desktop;
 x-scheme-handler/http=firefox.desktop;
+application/vnd.appimage=com.appimage-installer.desktop;
 
 [Default Applications]
 image/jpeg=feh.desktop;
