@@ -35,6 +35,7 @@ alias syncthing-gui="xdg-open http://127.0.0.1:8384"
 alias active-units="sudo systemctl list-units --type=service | grep active"
 
 alias dockeron="sudo systemctl start docker.service"
+alias dockerre="dockeroff && dockeron"
 alias mysqlon="sudo systemctl start mysql.service"
 alias runmyavd="emulator -avd test"
 alias netrestart="sudo systemctl restart NetworkManager"
