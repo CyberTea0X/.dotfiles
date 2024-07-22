@@ -1,0 +1,2 @@
+#!/bin/bash
+bash --rcfile <(echo ". ~/.bashrc; date | figlet | lolcat; tms")

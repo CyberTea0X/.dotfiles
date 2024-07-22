@@ -9,6 +9,9 @@ PS1='[\u@\h \W]\$ '
 # Add colors
 PS1="\[\e[1;34m\]$PS1\[\e[m\]"
 
+# Default browser for legacy apps
+export BROWSER="firefox:xdg-open"
+
 # VARIABLES
 export DOTS="$HOME/.dotfiles"
 export DOTSB="$DOTS/bash/.bashrc"
@@ -17,9 +20,9 @@ export DOTSB="$DOTS/bash/.bashrc"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias dotsu='bash -c "git -C $DOTS add $DOTS && git -C $DOTS commit -m \"update .dotfiles\" && git -C $DOTS push"'
-alias dotsd='bash -c "cd $DOTS && dotter deploy && cd - > /dev/null"'
-alias dotsdf='bash -c "cd $DOTS && dotter deploy --force && cd - > /dev/null"'
-alias dotsdd='bash -c "cd $DOTS && git pull --rebase && dotter deploy && cd - > /dev/null"'
+alias dotsd='bash -c "cd $DOTS && dotter deploy && cd - > /dev/null" && source ~/.bashrc'
+alias dotsdf='bash -c "cd $DOTS && dotter deploy --force && cd - > /dev/null" && source ~/.bashrc'
+alias dotsdd='bash -c "cd $DOTS && git pull --rebase && dotter deploy && cd - > /dev/null" && source ~/.bashrc'
 alias dotse='bash -c "nvim $DOTS/.dotter/global.toml"'
 alias dotsel='bash -c "nvim $DOTS/.dotter/local.toml"'
 alias mimesync='cp $HOME/.config/mimeapps.list $DOTS/mime/mimeapps.list'
@@ -40,7 +43,7 @@ alias mysqlon="sudo systemctl start mysql.service"
 alias runmyavd="emulator -avd test"
 alias netrestart="sudo systemctl restart NetworkManager"
 
-alias shoot3s="sleep 3s && maim \\"/home/$USER/Pictures/Screenshots/$(date).png\\""
+alias shoot3s="sleep 3s && maim \"/home/$USER/Pictures/Screenshots/$(date).png\""
 
 # GOTO ALIASES
 alias hw='cd ~/Lessons'
@@ -94,7 +97,6 @@ hyperlink () {
     </html>
     " >  $2.html
 }
-
 
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.cargo/bin

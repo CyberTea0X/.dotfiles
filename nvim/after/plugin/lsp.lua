@@ -59,7 +59,6 @@ require('mason-lspconfig').setup({
         'rust_analyzer', -- Rust lsp
         'gopls',         -- Golang lsp
         'omnisharp',     -- C# lsp
-        'taplo',         -- TOML lsp
         'yamlls',        -- YAML lsp
         --'svelte',
     },
