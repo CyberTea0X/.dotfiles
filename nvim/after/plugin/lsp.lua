@@ -21,6 +21,30 @@ end)
 
 vim.keymap.set("n", "<leader>vf", function() end, opts)
 
+
+require('mason').setup({})
+require('mason-lspconfig').setup({
+    -- Replace the language servers listed here
+    -- with the ones you want to install
+    ensure_installed = {
+        "jsonls",        -- json lsp
+        "html",          -- html lsp
+        "cssls",         -- CSS lsp
+        'tsserver',      -- Typescript lsp
+        'lua_ls',        -- Lua lsp
+        'pyright',       -- Python lsp
+        'rust_analyzer', -- Rust lsp
+        'gopls',         -- Golang lsp
+        'omnisharp',     -- C# lsp
+        'yamlls',        -- YAML lsp
+        'clangd',        -- C/C++
+        --'svelte',
+    },
+    handlers = {
+        lsp.default_setup,
+    },
+})
+
 require 'lspconfig'.tsserver.setup {}
 -- require('flutter-tools').setup({
 -- lsp = {
@@ -43,29 +67,13 @@ require 'lspconfig'.omnisharp.setup({
 })
 
 require 'lspconfig'.rust_analyzer.setup {}
+require 'lspconfig'.clangd.setup {
+    cmd = {
+        "clangd",
+        "--fallback-style=webkit"
+    }
+}
 
-
-require('mason').setup({})
-require('mason-lspconfig').setup({
-    -- Replace the language servers listed here
-    -- with the ones you want to install
-    ensure_installed = {
-        "jsonls",        -- json lsp
-        "html",          -- html lsp
-        "cssls",         -- CSS lsp
-        'tsserver',      -- Typescript lsp
-        'lua_ls',        -- Lua lsp
-        'pyright',       -- Python lsp
-        'rust_analyzer', -- Rust lsp
-        'gopls',         -- Golang lsp
-        'omnisharp',     -- C# lsp
-        'yamlls',        -- YAML lsp
-        --'svelte',
-    },
-    handlers = {
-        lsp.default_setup,
-    },
-})
 
 local cmp = require('cmp')
 vim.api.nvim_create_autocmd("BufRead", {
