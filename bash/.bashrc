@@ -42,6 +42,7 @@ alias dockerre="dockeroff && dockeron"
 alias mysqlon="sudo systemctl start mysql.service"
 alias runmyavd="emulator -avd test"
 alias netrestart="sudo systemctl restart NetworkManager"
+alias rewivepacman="sudo pacman -Sy --needed archlinux-keyring && sudo pacman -Su"
 
 alias shoot3s="sleep 3s && maim \"/home/$USER/Pictures/Screenshots/$(date).png\""
 
