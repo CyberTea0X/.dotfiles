@@ -21,6 +21,7 @@ set $mod Mod1
 
 # Changing language
 exec_always "setxkbmap -model pc104 -option grp:switch,grp:caps_toggle,grp_led:caps us,ru"
+exec --no-startup-id spoof-dpi -port 8079
 
 # set keyboard repeat speed and delay:
 exec_always "xset r rate 200 50"

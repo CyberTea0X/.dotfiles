@@ -56,7 +56,15 @@ require("lazy").setup({
     -- translation
     'uga-rosa/translate.nvim',
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-    'theprimeagen/harpoon',
+    -- quick navigation and bookmarks across the projects
+    {
+        "otavioschwanck/arrow.nvim",
+        opts = {
+            show_icons = true,
+            leader_key = '<leader>a',        -- Recommended to be a single key
+            buffer_leader_key = '<leader>m', -- Per Buffer Mappings
+        }
+    },
     'mbbill/undotree',
     'tpope/vim-fugitive',
     'lukas-reineke/lsp-format.nvim',
