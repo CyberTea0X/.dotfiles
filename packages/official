@@ -159,7 +159,6 @@ xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
 xorg-sessreg
-xorg-setxkbmap
 xorg-smproxy
 xorg-x11perf
 xorg-xauth
@@ -173,7 +172,6 @@ xorg-xgamma
 xorg-xhost
 xorg-xinit
 xorg-xinput
-xorg-xkbcomp
 xorg-xkbevd
 xorg-xkbutils
 xorg-xkill
@@ -182,7 +180,6 @@ xorg-xlsclients
 xorg-xlsfonts
 xorg-xmodmap
 xorg-xpr
-xorg-xrandr
 xorg-xrdb
 xorg-xrefresh
 xorg-xsetroot
