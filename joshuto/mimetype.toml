@@ -10,8 +10,14 @@ image_default = [
         "--scale-down",
         "--start-at",
     ], fork = true, silent = true },
-    { command = "gimp", fork = true, silent = true },
     { command = "krita", fork = true, silent = true },
+    { command = "xclip", args=[
+        "-selection",
+        "clipboard",
+        "-target",
+        "image/png",
+        "-i",
+    ], fork =true, silint=false }
 ]
 
 text_default = [
