@@ -41,9 +41,9 @@ gtk-engine-murrine
 handlr-regex
 hplip
 htop
+i3-wm
 i3blocks
 i3lock
-i3-wm
 imagemagick
 inetutils
 inkscape
@@ -61,7 +61,6 @@ linux-headers
 lolcat
 lshw
 lutris
-lvm2
 lxappearance
 maim
 mariadb
@@ -106,13 +105,13 @@ python-pygame
 python-pyqt5
 python-virtualenv
 qbittorrent
+qemu-base
 qemu-full
 ripgrep
 rofi
 rsync
 rustup
 sof-firmware
-spice
 spice-vdagent
 steam
 sudo
@@ -121,6 +120,7 @@ sysstat
 tailscale
 telegram-desktop
 tmux
+traceroute
 tree
 ttf-nerd-fonts-symbols
 udiskie
@@ -148,9 +148,9 @@ xf86-video-vesa
 xmlto
 xorg-bdftopcf
 xorg-docs
+xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
-xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
