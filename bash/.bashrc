@@ -79,9 +79,9 @@ pkgdump () {
 
 pkgdiff () {
     local P=$DOTS/packages
-    echo "Official packages:"
+    echo "# Official packages:"
     comm -23 <(uniq -u <(sort $P/official <(pacman -Qqen))) <(sort $P/nosync)
-    echo "Unofficial packages:"
+    echo "# Unofficial packages:"
     comm -23 <(uniq -u <(sort $P/unofficial <(pacman -Qqem))) <(sort $P/nosync)
 }
 
