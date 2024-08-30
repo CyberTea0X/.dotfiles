@@ -13,6 +13,7 @@ gocloc-git
 golangci-lint
 google-chrome
 joshuto-bin
+legacylauncher
 mimeo
 ngrok
 nvim-packer-git
@@ -28,6 +29,7 @@ rose-pine-gtk-theme-full
 rustdesk-bin
 selectdefaultapplication-git
 sing-geosite-db
+spoofdpi-bin
 tokyonight-gtk-theme-git
 ttf-comic-mono-git
 ttf-ms-fonts
