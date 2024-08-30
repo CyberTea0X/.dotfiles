@@ -73,8 +73,14 @@ pkgdepl () {
 
 pkgdump () {
     local P=$DOTS/packages
-    comm -23 <(uniq -u <(sort $P/official <(pacman -Qqen))) <(sort $P/nosync) > $P/official
-    comm -23 <(uniq -u <(sort $P/unofficial <(pacman -Qqem))) <(sort $P/nosync) > $P/unofficial
+    comm -23 <(uniq -u <(sort <(pacman -Qqen))) <(sort $P/nosync) > $P/official
+    comm -23 <(uniq -u <(sort <(pacman -Qqem))) <(sort $P/nosync) > $P/unofficial
+}
+
+pkgdump-show () {
+    local P=$DOTS/packages
+    comm -23 <(uniq -u <(sort <(pacman -Qqen))) <(sort $P/nosync)
+    comm -23 <(uniq -u <(sort <(pacman -Qqem))) <(sort $P/nosync)
 }
 
 pkgdiff () {
