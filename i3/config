@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 #--- APPS ---------------------------------------------------------
-set $browser firefox
+set $browser 'bash ~/.config/i3/scripts/proxy_firefox.sh'
 set $terminal alacritty
 # special window class for terminal (it should be different from default class
 set $terminal_spec alacritty
@@ -37,7 +37,7 @@ exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
 
 # autostart specific programs in specific workspaces
 exec --no-startup-id i3-msg 'workspace $ws1; exec "$browser"'
-exec --no-startup-id i3-msg 'workspace $ws2; exec "$terminal --class $terminal_spec -e hello"'
+exec --no-startup-id i3-msg 'workspace $ws2; exec "$terminal --class $terminal_spec -e hi"'
 exec --no-startup-id i3-msg 'workspace $ws3; exec "telegram-desktop"'
 exec --no-startup-id i3-msg 'workspace $ws3; exec "/home/$USER/.local/share/vt-messenger/vk"'
 

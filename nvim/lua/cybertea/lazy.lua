@@ -53,6 +53,7 @@ require("lazy").setup({
             require('crates').setup()
         end,
     },
+    -- openssl decryption/encryption
     -- translation
     'uga-rosa/translate.nvim',
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
