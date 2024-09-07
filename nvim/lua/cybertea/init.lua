@@ -1,4 +1,5 @@
 require("cybertea.remap")
 require("cybertea.set")
 require("cybertea.lazy")
+require("cybertea.commands")
 print("Hello, Cybertea!")

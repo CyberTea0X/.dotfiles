@@ -14,11 +14,16 @@ depends = [
     "joshuto",
     "cargo",
     "polybar",
+    "youtubedl",
 ]
 
 # all packages not included in the default package
 [nondefault]
 depends = []
+
+# youtube video downloader
+[youtubedl.files]
+youtubedl = "/etc/yt-dlp.conf"
 
 # clipboard manager written in rust
 [clipcat.files]
