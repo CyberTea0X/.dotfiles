@@ -23,7 +23,7 @@ depends = []
 
 # youtube video downloader
 [youtubedl.files]
-youtubedl = "/etc/yt-dlp.conf"
+youtubedl = "~/.config"
 
 # clipboard manager written in rust
 [clipcat.files]
