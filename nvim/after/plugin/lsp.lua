@@ -27,17 +27,18 @@ require('mason-lspconfig').setup({
     -- Replace the language servers listed here
     -- with the ones you want to install
     ensure_installed = {
-        "jsonls",        -- json lsp
-        "html",          -- html lsp
-        "cssls",         -- CSS lsp
-        'tsserver',      -- Typescript lsp
-        'lua_ls',        -- Lua lsp
-        'pyright',       -- Python lsp
-        'rust_analyzer', -- Rust lsp
-        'gopls',         -- Golang lsp
-        'omnisharp',     -- C# lsp
-        'yamlls',        -- YAML lsp
-        'clangd',        -- C/C++
+        "jsonls",               -- json lsp
+        "html",                 -- html lsp
+        "cssls",                -- CSS lsp
+        'ts_ls',                -- Typescript lsp
+        'java_language_server', -- Java lsp
+        'lua_ls',               -- Lua lsp
+        'pyright',              -- Python lsp
+        'rust_analyzer',        -- Rust lsp
+        'gopls',                -- Golang lsp
+        'omnisharp',            -- C# lsp
+        'yamlls',               -- YAML lsp
+        'clangd',               -- C/C++
         --'svelte',
     },
     handlers = {

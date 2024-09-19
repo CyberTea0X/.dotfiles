@@ -24,3 +24,4 @@ Exec=$(realpath $filepath)
 Type=Application\
 " > ~/.local/share/applications/${filename}.desktop
 chmod +x ~/.local/share/applications/${filename}.desktop
+echo "${filename}.desktop have been created in ~/.local/share/applications"
