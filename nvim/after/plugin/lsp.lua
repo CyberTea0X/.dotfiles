@@ -1,11 +1,7 @@
-local lsp = require('lsp-zero').preset({})
+local lsp = require('lsp-zero')
 
-lsp.on_attach(function(client, buffer)
-    local opts = { buffer = buffer, remap = false }
-    if client.supports_method('textDocument/formatting') then
-        require('lsp-format').on_attach(client)
-    end
-
+local lsp_attach = function(_, bufnr)
+    local opts = { buffer = bufnr }
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
@@ -17,10 +13,14 @@ lsp.on_attach(function(client, buffer)
     vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
-end)
+    vim.keymap.set("n", "<leader>vf", function() end, opts)
+end
 
-vim.keymap.set("n", "<leader>vf", function() end, opts)
-
+lsp.extend_lspconfig({
+    sign_text = true,
+    lsp_attach = lsp_attach,
+    capabilities = require('cmp_nvim_lsp').default_capabilities(),
+})
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
@@ -46,7 +46,7 @@ require('mason-lspconfig').setup({
     },
 })
 
-require 'lspconfig'.tsserver.setup {}
+require 'lspconfig'.ts_ls.setup {}
 -- require('flutter-tools').setup({
 -- lsp = {
 -- capabilities = lsp.get_capabilities()
@@ -85,4 +85,3 @@ vim.api.nvim_create_autocmd("BufRead", {
     end,
 })
 
-lsp.setup()
