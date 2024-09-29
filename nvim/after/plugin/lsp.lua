@@ -1,5 +1,17 @@
 local lsp = require('lsp-zero')
 
+local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
+local lsp_format_on_save = function(bufnr)
+    vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+    vim.api.nvim_create_autocmd('BufWritePre', {
+        group = augroup,
+        buffer = bufnr,
+        callback = function()
+            vim.lsp.buf.format()
+        end,
+    })
+end
+
 local lsp_attach = function(_, bufnr)
     local opts = { buffer = bufnr }
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
@@ -14,7 +26,9 @@ local lsp_attach = function(_, bufnr)
     vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
     vim.keymap.set("n", "<leader>vf", function() end, opts)
+    lsp_format_on_save(bufnr)
 end
+
 
 lsp.extend_lspconfig({
     sign_text = true,
@@ -85,3 +99,10 @@ vim.api.nvim_create_autocmd("BufRead", {
     end,
 })
 
+vim.api.nvim_create_autocmd('BufRead', {
+    desc = 'set filetype xml for extension .axaml',
+    pattern = '*.axaml',
+    callback = function()
+        vim.bo.filetype = 'xml'
+    end,
+})

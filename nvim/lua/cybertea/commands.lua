@@ -1,7 +1,7 @@
 -- Команда для шифрования текущего буфера
 vim.api.nvim_create_user_command('EncryptFile', function()
     local file = vim.fn.expand('%:p')
-    vim.cmd('w')                  -- Сохранить файл перед шифрованием
+    vim.cmd('w')                    -- Сохранить файл перед шифрованием
     os.execute('openssl enc -aes-256-cbc -salt -in ' .. file .. ' -out ' .. file .. '.enc')
     vim.cmd('e ' .. file .. '.enc') -- Открыть зашифрованный файл
 end, {})
