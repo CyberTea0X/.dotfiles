@@ -16,16 +16,14 @@ local lsp_attach = function(_, bufnr)
     local opts = { buffer = bufnr }
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-    vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
-    vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
-    vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
-    vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
-    vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
-    vim.keymap.set("v", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
-    vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
-    vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-    vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
-    vim.keymap.set("n", "<leader>vf", function() end, opts)
+    vim.keymap.set('n', 'gD', function() vim.lsp.buf.declaration() end, opts)
+    vim.keymap.set('n', 'gi', function() vim.lsp.buf.implementation() end, opts)
+    vim.keymap.set('n', 'go', function() vim.lsp.buf.type_definition() end, opts)
+    vim.keymap.set('n', 'gr', function() vim.lsp.buf.references() end, opts)
+    vim.keymap.set('n', 'gs', function() vim.lsp.buf.signature_help() end, opts)
+    vim.keymap.set('n', '<F2>', function() vim.lsp.buf.rename() end, opts)
+    vim.keymap.set({ 'n', 'x' }, '<F3>', function() vim.lsp.buf.format({ async = true }) end, opts)
+    vim.keymap.set('n', '<leader>ca', function() vim.lsp.buf.code_action() end, opts)
     lsp_format_on_save(bufnr)
 end
 
@@ -41,18 +39,18 @@ require('mason-lspconfig').setup({
     -- Replace the language servers listed here
     -- with the ones you want to install
     ensure_installed = {
-        "jsonls",               -- json lsp
-        "html",                 -- html lsp
-        "cssls",                -- CSS lsp
-        'tsserver',                -- Typescript lsp
-        'java_language_server', -- Java lsp
-        'lua_ls',               -- Lua lsp
-        'pyright',              -- Python lsp
-        'rust_analyzer',        -- Rust lsp
-        'gopls',                -- Golang lsp
-        'omnisharp',            -- C# lsp
-        'yamlls',               -- YAML lsp
-        'clangd',               -- C/C++
+        "jsonls",        -- json lsp
+        "html",          -- html lsp
+        "cssls",         -- CSS lsp
+        'ts_ls',         -- Typescript lsp
+        'jdtls',
+        'lua_ls',        -- Lua lsp
+        'pyright',       -- Python lsp
+        'rust_analyzer', -- Rust lsp
+        'gopls',         -- Golang lsp
+        'omnisharp',     -- C# lsp
+        'yamlls',        -- YAML lsp
+        'clangd',        -- C/C++
         --'svelte',
     },
     handlers = {
@@ -60,7 +58,7 @@ require('mason-lspconfig').setup({
     },
 })
 
-require 'lspconfig'.tsserver.setup {}
+require 'lspconfig'.ts_ls.setup {}
 -- require('flutter-tools').setup({
 -- lsp = {
 -- capabilities = lsp.get_capabilities()

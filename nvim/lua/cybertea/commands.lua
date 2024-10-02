@@ -12,3 +12,7 @@ vim.api.nvim_create_user_command('DecryptFile', function()
     os.execute('openssl enc -d -aes-256-cbc -in ' .. file .. ' -out ' .. file:gsub('.enc$', ''))
     vim.cmd('e ' .. file:gsub('.enc$', '')) -- Открыть дешифрованный файл
 end, {})
+
+vim.api.nvim_create_user_command('IndentWithTabs', function()
+    vim.cmd(":set autoindent noexpandtab tabstop=4 shiftwidth=4")
+end, {})
