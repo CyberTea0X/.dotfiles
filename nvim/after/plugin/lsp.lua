@@ -44,7 +44,7 @@ require('mason-lspconfig').setup({
         "jsonls",               -- json lsp
         "html",                 -- html lsp
         "cssls",                -- CSS lsp
-        'ts_ls',                -- Typescript lsp
+        'tsserver',                -- Typescript lsp
         'java_language_server', -- Java lsp
         'lua_ls',               -- Lua lsp
         'pyright',              -- Python lsp
@@ -60,7 +60,7 @@ require('mason-lspconfig').setup({
     },
 })
 
-require 'lspconfig'.ts_ls.setup {}
+require 'lspconfig'.tsserver.setup {}
 -- require('flutter-tools').setup({
 -- lsp = {
 -- capabilities = lsp.get_capabilities()
