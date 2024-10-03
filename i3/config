@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 #--- APPS ---------------------------------------------------------
-set $browser 'bash ~/.config/i3/scripts/proxy_firefox.sh'
+set $browser firefox
 set $terminal alacritty
 # special window class for terminal (it should be different from default class
 set $terminal_spec alacritty
@@ -21,7 +21,6 @@ set $mod Mod1
 
 # Changing language
 exec_always "setxkbmap -model pc104 -option grp:switch,grp:caps_toggle,grp_led:caps us,ru"
-exec --no-startup-id spoofdpi -port 8079
 
 # set keyboard repeat speed and delay:
 exec_always "xset r rate 200 50"
