@@ -1,2 +1,2 @@
 #!/bin/bash
-yt-dlp -x -f bestaudio[ext=mp4] $1
+yt-dlp -o 'mp3:~/Music/%(title)s' --extract-audio --audio-format mp3 --audio-quality 0 $1

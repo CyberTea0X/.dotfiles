@@ -44,6 +44,7 @@ alias runmyavd="emulator -avd test"
 alias netrestart="sudo systemctl restart NetworkManager"
 alias rewivepacman="sudo pacman -Sy --needed archlinux-keyring && sudo pacman -Su"
 alias music="tmux new -s Music kew"
+alias musicspace="tmux send-keys -t Music.1 Space"
 
 alias shoot3s="sleep 3s && maim \"/home/$USER/Pictures/Screenshots/$(date).png\""
 
