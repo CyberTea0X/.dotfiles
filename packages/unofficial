@@ -3,7 +3,10 @@ android-platform-31
 android-sdk
 android-sdk-build-tools
 android-sdk-platform-tools
+android-studio
 appimagelauncher-bin
+aspnet-runtime-bin
+bore-git
 bun-bin
 cbonsai
 cht.sh-git
@@ -14,6 +17,7 @@ golangci-lint
 google-chrome
 joshuto-bin
 kew
+linux-wifi-hotspot-bin
 mimeo
 nessus
 ngrok
