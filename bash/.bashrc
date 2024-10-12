@@ -37,6 +37,7 @@ alias seriousbg="feh --bg-scale ~/Pictures/bg/arch-kiss-blue.png"
 alias syncthing-gui="xdg-open http://127.0.0.1:8384"
 alias active-units="sudo systemctl list-units --type=service | grep active"
 
+
 alias dockeron="sudo systemctl start docker.service"
 alias dockerre="dockeroff && dockeron"
 alias mysqlon="sudo systemctl start mysql.service"
@@ -51,6 +52,15 @@ alias shoot3s="sleep 3s && maim \"/home/$USER/Pictures/Screenshots/$(date).png\"
 # GOTO ALIASES
 alias hw='cd ~/Lessons'
 alias dots='cd $DOTS'
+
+ta () {
+    for i in {1..10}
+    do
+        if tmux a -t $i 2> /dev/null ; then
+            break
+        fi
+    done
+}
 
 open () {
   nohup xdg-open "$*" > /dev/null 2>&1 &
