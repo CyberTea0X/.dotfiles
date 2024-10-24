@@ -54,7 +54,7 @@ alias hw='cd ~/Lessons'
 alias dots='cd $DOTS'
 
 ta () {
-    for i in {1..10}
+    for i in {0..10}
     do
         if tmux a -t $i 2> /dev/null ; then
             break

@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 
+
 -- open oil nvim file explorer
 vim.keymap.set("n", "<leader>pv", vim.cmd.Oil)
 --vim.keymap.set("n", "<leader>pr", vim.cmd.Rex)
@@ -52,3 +53,6 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- makes bash into executable (maybe not only bash, idk)
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- show diagnostic
+vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
