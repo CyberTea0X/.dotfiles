@@ -53,6 +53,10 @@ alias shoot3s="sleep 3s && maim \"/home/$USER/Pictures/Screenshots/$(date).png\"
 alias hw='cd ~/Lessons'
 alias dots='cd $DOTS'
 
+pw () {
+    echo $1 | openssl passwd -1 -salt cybertea --stdin
+}
+
 ta () {
     for i in {0..10}
     do
