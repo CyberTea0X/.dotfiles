@@ -44,14 +44,6 @@ require("lazy").setup({
     {
         "folke/tokyonight.nvim",
     },
-    -- markdown renderer
-    {
-        'MeanderingProgrammer/render-markdown.nvim',
-        dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
-        ---@module 'render-markdown'
-        ---@type render.md.UserConfig
-        opts = {},
-    },
     -- auto detecting indent style
     {
         'nmac427/guess-indent.nvim',
