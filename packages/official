@@ -25,7 +25,6 @@ docker
 docker-buildx
 docker-compose
 dosfstools
-dotnet-sdk
 dunst
 efibootmgr
 entr
@@ -45,9 +44,9 @@ hashcat
 hostapd
 hplip
 htop
+i3-wm
 i3blocks
 i3lock
-i3-wm
 imagemagick
 inetutils
 inkscape
@@ -154,9 +153,9 @@ xf86-video-vesa
 xmlto
 xorg-bdftopcf
 xorg-docs
+xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
-xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
