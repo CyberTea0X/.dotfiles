@@ -25,6 +25,7 @@ docker
 docker-buildx
 docker-compose
 dosfstools
+dotnet-sdk
 dunst
 efibootmgr
 entr
@@ -44,9 +45,9 @@ hashcat
 hostapd
 hplip
 htop
-i3-wm
 i3blocks
 i3lock
+i3-wm
 imagemagick
 inetutils
 inkscape
@@ -70,6 +71,7 @@ maim
 mariadb
 mate-calc
 maven
+mingw-w64-gcc
 mold
 nasm
 ncrack
@@ -123,6 +125,7 @@ sysstat
 tailscale
 telegram-desktop
 tmux
+torbrowser-launcher
 traceroute
 tree
 ttf-nerd-fonts-symbols
@@ -151,9 +154,9 @@ xf86-video-vesa
 xmlto
 xorg-bdftopcf
 xorg-docs
-xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
+xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
