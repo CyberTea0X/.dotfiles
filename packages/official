@@ -1,6 +1,5 @@
 acpi
 aircrack-ng
-alacritty
 alsa-utils
 amd-ucode
 android-file-transfer
@@ -45,9 +44,9 @@ hashcat
 hostapd
 hplip
 htop
+i3-wm
 i3blocks
 i3lock
-i3-wm
 imagemagick
 inetutils
 inkscape
@@ -155,9 +154,9 @@ xf86-video-vesa
 xmlto
 xorg-bdftopcf
 xorg-docs
+xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
-xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server

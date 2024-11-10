@@ -1,3 +1,4 @@
+alacritty-smooth-cursor-git
 android-ndk
 android-platform-31
 android-sdk
@@ -21,6 +22,7 @@ joshuto-bin
 kew
 linux-wifi-hotspot-bin
 mimeo
+nekoray-bin
 nessus
 ngrok
 nvim-packer-git
