@@ -36,6 +36,7 @@ alias animedit="nvim ~/Obsidian/Anime-and-films/anime.md"
 alias seriousbg="feh --bg-scale ~/Pictures/bg/arch-kiss-blue.png"
 alias syncthing-gui="xdg-open http://127.0.0.1:8384"
 alias active-units="sudo systemctl list-units --type=service | grep active"
+alias diskusage="df -Th -xtmpfs"
 
 
 alias dockeron="sudo systemctl start docker.service"

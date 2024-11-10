@@ -15,11 +15,16 @@ depends = [
     "cargo",
     "polybar",
     "youtubedl",
+    "ideavim"
 ]
 
 # all packages not included in the default package
 [nondefault]
 depends = []
+
+# vim emulation plugins for jetbrains settings
+[ideavim.files]
+ideavim = "~/"
 
 # youtube video downloader
 [youtubedl.files]
