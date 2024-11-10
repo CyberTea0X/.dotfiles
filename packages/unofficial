@@ -6,12 +6,14 @@ android-sdk-platform-tools
 android-studio
 appimagelauncher-bin
 aspnet-runtime-bin
+blender-bin
 bore-git
 bun-bin
 cbonsai
 cht.sh-git
 debtap
 dotter-rs
+f3d-bin
 gocloc-git
 golangci-lint
 google-chrome
