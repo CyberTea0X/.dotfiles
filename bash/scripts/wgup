@@ -1,2 +1,9 @@
 #!/bin/bash
-alacritty -e bash -c "wg-quick up wg0 && sleep 0.5"
+alacritty -e bash -c '\
+    wg-quick up wg0 || (wg-quick down wg0 && wg-quick up wg0);\
+    ping -c1 -q google.com;\
+    while [ $? -ne 0 ]; do\
+        wg-quick down wg0;\
+        wg-quick up wg0;\
+        ping -c1 -q google.com;\
+    done'
