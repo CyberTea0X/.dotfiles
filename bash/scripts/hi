@@ -1,2 +1,2 @@
 #!/bin/bash
-bash --rcfile <(echo ". ~/.bashrc; clear; date | figlet | lolcat; tms")
+bash --rcfile <(echo ". ~/.bashrc; clear; neofetch")
