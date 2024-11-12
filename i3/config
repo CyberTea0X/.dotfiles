@@ -71,9 +71,10 @@ for_window [floating] border pixel 0
 
 #--- WINDOW GAPS
 # gaps inner|outer|horizontal|vertical|top|right|bottom|left
-gaps top 2
-gaps outer 5
-gaps inner 5
+#gaps top 2
+gaps inner 3
+#gaps outer 5
+#gaps inner 5
 #--- FLOATING APPLICATIONS ---------------------------------------
 # android vms
 for_window [title=".*Emulator.*"] floating enable
