@@ -19,9 +19,6 @@ set $terminal_spec alacritty
 
 set $mod Mod1
 
-# Changing language
-exec_always "setxkbmap -model pc104 -option grp:switch,grp:caps_toggle,grp_led:caps us,ru"
-
 # set keyboard repeat speed and delay:
 exec_always "xset r rate 200 50"
 
@@ -34,18 +31,18 @@ exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# autostart specific programs in specific workspaces
-exec --no-startup-id i3-msg 'workspace $ws1; exec "$browser"'
-exec --no-startup-id i3-msg 'workspace $ws2; exec "$terminal --class $terminal_spec -e hi"'
-exec --no-startup-id i3-msg 'workspace $ws3; exec "telegram-desktop"'
-exec --no-startup-id i3-msg 'workspace $ws3; exec "/home/$USER/.local/share/vt-messenger/vk"'
-
 # assign specific workspaces to some apps
 assign [class="$browser"] $ws1
 # only alacritty and not Alacritty will be opened here
 assign [class="$terminal_spec"] $ws2
 assign [class="telegram-desktop"] $ws3
 assign [class="vt"] $ws3
+
+# autostart specific programs in specific workspaces
+exec --no-startup-id i3-msg 'workspace $ws1; exec "$browser"'
+exec --no-startup-id sleep 0.2; i3-msg 'workspace $ws3; exec "telegram-desktop"'
+exec --no-startup-id sleep 0.2; i3-msg 'workspace $ws3; exec "/home/$USER/.local/share/vt-messenger/vk"'
+exec --no-startup-id sleep 1; i3-msg 'workspace $ws2; exec "$terminal --class $terminal_spec -e hi"'
 
 ## screenshots
 bindsym Print exec --no-startup-id "maim \\"/home/$USER/Pictures/Screenshots/$(date).png\\""
@@ -269,8 +266,5 @@ bindsym $mod+r mode "resize"
 #status_command i3status
 #}
 
-# Go to terminal on start
-exec "sleep 2; i3-msg \"workspace $ws\""
-
-for_window [class="telegram-desktop"] layout tabbed
-for_window [class="vt"] layout tabbed
+# Changing language
+exec_always "setxkbmap -model pc104 -option grp:switch,grp:caps_toggle,grp_led:caps us,ru"
