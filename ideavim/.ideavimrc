@@ -16,6 +16,10 @@ if has('ide')
   " mappings and options that exist only in IdeaVim
   map <leader>pf <Action>(GotoFile)
   map <leader>a <Action>(Switcher)
+  map <leader>gd <Action>(QuickImplementations)
+  map K <Action>(ShowHoverInfo)
+  map <leader>ca <Action>(ShowIntentionActions)
+  map <F2> <Action>(RenameElement)
 
   if &ide =~? 'intellij idea'
     if &ide =~? 'community'
