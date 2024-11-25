@@ -20,7 +20,7 @@ set $terminal_spec alacritty
 set $mod Mod1
 
 # set keyboard repeat speed and delay:
-exec_always "sleep xset r rate 200 50"
+exec_always "xset r rate 200 50"
 
 #--- AUTOSTART ----------------------------------------------------
 exec_always --no-startup-id bash ~/.config/i3/scripts/launch_picom.sh
