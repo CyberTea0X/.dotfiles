@@ -65,6 +65,10 @@ require 'lspconfig'.ts_ls.setup {}
 -- }
 -- })
 
+require 'lspconfig'.jdtls.setup {
+    single_file_support = true,
+}
+
 require 'lspconfig'.omnisharp.setup({
     cmd = { vim.fn.stdpath("data") .. "/mason/packages/omnisharp/omnisharp" },
     handlers = {
