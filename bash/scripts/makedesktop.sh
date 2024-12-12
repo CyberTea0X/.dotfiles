@@ -28,6 +28,6 @@ Name=$appname
 Exec=$(realpath $filepath)
 Type=Application\
 $icon
-" > ~/.local/share/applications/${filename}.desktop
-chmod +x ~/.local/share/applications/${filename}.desktop
+" > "$HOME/.local/share/applications/${filename}.desktop"
+chmod +x "~/.local/share/applications/${filename}.desktop"
 echo "${filename}.desktop have been created in ~/.local/share/applications"
