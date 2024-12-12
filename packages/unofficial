@@ -29,6 +29,7 @@ ngrok
 nvim-packer-git
 onlyoffice-bin
 packettracer
+playit-bin
 prismlauncher-qt5-bin
 protoc-gen-go
 protontricks
@@ -46,6 +47,7 @@ spoofdpi-bin
 tokyonight-gtk-theme-git
 ttf-comic-mono-git
 ttf-ms-fonts
+vacuum-bin
 whatsdesk-bin
 wrk
 xcursor-simp1e-tokyo-night
