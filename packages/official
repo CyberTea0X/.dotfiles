@@ -95,7 +95,6 @@ openresolv
 p7zip
 pacman-contrib
 pavucontrol
-pcmanfm-gtk3
 picom
 pinta
 pipewire-pulse
@@ -124,6 +123,7 @@ syncthing
 sysstat
 tailscale
 telegram-desktop
+thunar
 tmux
 torbrowser-launcher
 traceroute
