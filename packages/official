@@ -1,3 +1,4 @@
+7zip
 acpi
 aircrack-ng
 alsa-utils
@@ -92,7 +93,6 @@ ntp
 obs-studio
 onefetch
 openresolv
-p7zip
 pacman-contrib
 pavucontrol
 picom
@@ -108,6 +108,7 @@ python-pipx
 python-protobuf
 python-pygame
 python-pyqt5
+python-pytesseract
 python-virtualenv
 qbittorrent
 qemu-full
@@ -123,11 +124,17 @@ syncthing
 sysstat
 tailscale
 telegram-desktop
+tesseract-data-eng
+tesseract-data-rus
 thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
 tmux
 torbrowser-launcher
 traceroute
 tree
+ttf-fira-mono
 ttf-nerd-fonts-symbols
 udiskie
 udisks2

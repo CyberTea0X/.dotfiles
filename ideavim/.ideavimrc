@@ -33,6 +33,8 @@ if has('ide')
 else
   " some mappings for Vim/Neovim
   nnoremap <leader>f <cmd>Telescope find_files<cr>
+  nnoremap <leader>y "+y
+  vnoremap <leader>y "+y
 endif
 
 " Don't use Ex mode, use Q for formatting.

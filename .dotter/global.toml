@@ -3,17 +3,13 @@
 
 [default]
 depends = [
-    "i3",
     "bash",
     "mime",
     "alacritty",
     "nvim",
-    "rofi",
     "tms",
     "tmux",
-    "joshuto",
     "cargo",
-    "polybar",
     "youtubedl",
     "ideavim"
 ]
