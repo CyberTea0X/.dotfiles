@@ -21,6 +21,17 @@ require("lazy").setup({
         tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
+    -- highlight yank operations
+    --     {
+    --         "rachartier/tiny-glimmer.nvim",
+    --         config = function()
+    --             require('tiny-glimmer').setup()
+    --         end,
+    --         event = "TextYankPost",
+    --         opts = {
+    --             -- your configuration
+    --         },
+    --     },
 
     -- some features for golang
     {
