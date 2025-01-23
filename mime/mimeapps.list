@@ -7,13 +7,20 @@ application/x-extension-xhtml=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
 application/zip=xarchiver.desktop;pcmanfm.desktop;
 image/jpeg=pinta.desktop;feh.desktop;
-image/png=feh.desktop;
+image/png=nsxiv.desktop;feh.desktop;
 inode/directory=userapp-zip -r-BTQ9F2.desktop;pcmanfm.desktop;
-text/html=firefox.desktop;
+text/html=leafpad.desktop;firefox.desktop;
 x-scheme-handler/chrome=firefox.desktop;
 x-scheme-handler/http=firefox.desktop;
 application/vnd.appimage=com.appimage-installer.desktop;
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;
+application/java-archive=java-java-openjdk.desktop;xarchiver.desktop;
+application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
+text/plain=org.xfce.mousepad.desktop;leafpad.desktop;libreoffice-writer.desktop;
+application/xml=leafpad.desktop;
+application/x-msdownload=wine.desktop;
+image/svg+xml=pinta.desktop;nsxiv.desktop;
+application/x-shellscript=leafpad.desktop;
 
 [Default Applications]
 image/jpeg=feh.desktop;
@@ -44,3 +51,4 @@ x-scheme-handler/about=firefox.desktop
 x-scheme-handler/unknown=firefox.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
 x-scheme-handler/discord-443564201349218305=discord-443564201349218305.desktop
+text/plain=org.xfce.mousepad.desktop
