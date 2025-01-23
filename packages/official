@@ -5,6 +5,7 @@ alsa-utils
 amd-ucode
 android-file-transfer
 android-tools
+arandr
 base
 base-devel
 bc
@@ -29,6 +30,7 @@ dotnet-sdk
 dunst
 efibootmgr
 entr
+eslint
 feh
 figlet
 firefox
@@ -82,6 +84,7 @@ neovim-qt
 netctl
 networkmanager
 ninja
+nitrogen
 nmap
 noto-fonts
 noto-fonts-cjk
@@ -103,6 +106,7 @@ polybar
 progress
 pulseaudio-alsa
 pyenv
+pyright
 python-pip
 python-pipx
 python-protobuf
@@ -203,6 +207,7 @@ xorg-xwininfo
 xorg-xwud
 xss-lock
 yt-dlp
+zed
 zerotier-one
 zip
 zoxide

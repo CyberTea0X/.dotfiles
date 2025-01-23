@@ -25,7 +25,7 @@ exec_always "xset r rate 200 50"
 #--- AUTOSTART ----------------------------------------------------
 exec_always --no-startup-id bash ~/.config/i3/scripts/launch_picom.sh
 exec_always --no-startup-id bash ~/.config/i3/scripts/launch_polybar.sh
-exec --no-startup-id feh --bg-fill ~/Pictures/bg/cat-town-anime-blue.jpg
+exec --no-startup-id feh --bg-center ~/Pictures/bg/horror-black-white-red-girl.jpg
 exec --no-startup-id dunst -conf ~/.config/dunst/dunstrc
 # exec --no-startup-id dex --autostart --environment i3
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
