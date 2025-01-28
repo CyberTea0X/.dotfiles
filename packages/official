@@ -29,6 +29,7 @@ dosfstools
 dotnet-sdk
 dunst
 efibootmgr
+elisa
 entr
 eslint
 feh
@@ -120,6 +121,7 @@ ripgrep
 rofi
 rsync
 rustup
+sddm
 sof-firmware
 spice-vdagent
 steam
