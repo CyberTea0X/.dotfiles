@@ -14,7 +14,7 @@ smooth_motion_max_stretch_y = 5.0
 style = "Beam"
 
 [scrolling]
-history = 100
+history = 10000
 
 [window]
 opacity = 0.9
