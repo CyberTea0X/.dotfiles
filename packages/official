@@ -44,6 +44,7 @@ go
 gradle
 grub
 gtk-engine-murrine
+gvfs
 handlr-regex
 hashcat
 hostapd
@@ -96,6 +97,7 @@ nsxiv
 ntp
 obs-studio
 onefetch
+openapi-generator
 openresolv
 pacman-contrib
 pavucontrol
@@ -122,8 +124,10 @@ rofi
 rsync
 rustup
 sddm
+sdl3
 sof-firmware
 spice-vdagent
+sshfs
 steam
 sudo
 syncthing
@@ -145,6 +149,7 @@ ttf-nerd-fonts-symbols
 udiskie
 udisks2
 ufw
+unrar
 unzip
 vim
 virt-manager
