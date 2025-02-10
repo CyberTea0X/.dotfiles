@@ -54,6 +54,10 @@ alias shoot3s="sleep 3s && maim \"/home/$USER/Pictures/Screenshots/$(date).png\"
 alias hw='cd ~/Lessons'
 alias dots='cd $DOTS'
 
+copypath () {
+    realpath $1 | xsc
+}
+
 pw () {
     echo $1 | openssl passwd -1 -salt cybertea --stdin
 }

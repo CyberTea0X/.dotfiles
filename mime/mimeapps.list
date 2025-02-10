@@ -18,7 +18,7 @@ application/java-archive=java-java-openjdk.desktop;xarchiver.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
 text/plain=org.xfce.mousepad.desktop;leafpad.desktop;libreoffice-writer.desktop;
 application/xml=leafpad.desktop;
-application/x-msdownload=wine.desktop;
+application/x-msdownload=com.usebottles.bottles.desktop;wine.desktop;
 image/svg+xml=pinta.desktop;nsxiv.desktop;
 application/x-shellscript=leafpad.desktop;
 
@@ -52,3 +52,4 @@ x-scheme-handler/unknown=firefox.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
 x-scheme-handler/discord-443564201349218305=discord-443564201349218305.desktop
 text/plain=org.xfce.mousepad.desktop
+application/x-ms-dos-executable;application/x-wine-extension-msp;application/x-msi;application/x-msdos-program;text/win-bat;=PortProton.desktop

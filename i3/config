@@ -42,7 +42,7 @@ assign [class="vt"] $ws3
 exec --no-startup-id i3-msg 'workspace $ws1; exec "$browser"'
 exec --no-startup-id sleep 0.5; i3-msg 'workspace $ws3; exec "telegram-desktop"'
 exec --no-startup-id sleep 0.5; i3-msg 'workspace $ws3; exec "/home/$USER/.local/share/vt-messenger/vk"'
-exec --no-startup-id sleep 4; i3-msg 'workspace $ws2; exec "$terminal --class $terminal_spec -e hi"'
+exec --no-startup-id sleep 4; i3-msg 'workspace $ws2; exec "$terminal --class $terminal_spec -e ~/.local/bin/hi"'
 
 ## screenshots
 bindsym Print exec --no-startup-id "maim \\"/home/$USER/Pictures/Screenshots/$(date).png\\""
