@@ -51,13 +51,10 @@ hashcat
 hostapd
 hplip
 htop
-<<<<<<< HEAD
-i3-wm
-=======
 hwinfo
->>>>>>> 77668bc (update .dotfiles)
 i3blocks
 i3lock
+i3-wm
 imagemagick
 inetutils
 inkscape
@@ -179,9 +176,9 @@ xf86-video-vesa
 xmlto
 xorg-bdftopcf
 xorg-docs
-xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
+xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
