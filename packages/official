@@ -35,6 +35,7 @@ eslint
 feh
 figlet
 firefox
+flatpak
 fzf
 gamemode
 gdb
@@ -50,7 +51,11 @@ hashcat
 hostapd
 hplip
 htop
+<<<<<<< HEAD
 i3-wm
+=======
+hwinfo
+>>>>>>> 77668bc (update .dotfiles)
 i3blocks
 i3lock
 imagemagick
@@ -96,6 +101,7 @@ npm
 nsxiv
 ntp
 obs-studio
+ollama
 onefetch
 openapi-generator
 openresolv
@@ -127,6 +133,7 @@ sddm
 sdl3
 sof-firmware
 spice-vdagent
+sqlc
 sshfs
 steam
 sudo
