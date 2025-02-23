@@ -2,7 +2,6 @@ alacritty-smooth-cursor-git
 android-studio
 anime-games-launcher-bin
 appimagelauncher-bin
-aspnet-runtime-bin
 audio-share-bin
 blender-bin
 bore-git
@@ -15,7 +14,10 @@ dotter-rs
 gocloc-git
 golangci-lint-bin
 google-chrome
+jellyfin-media-player
+jellyfin-server-bin
 joshuto-bin
+k6-bin
 kew
 linux-wifi-hotspot-bin
 mimeo
@@ -25,10 +27,13 @@ prismlauncher-qt5-bin
 protoc-gen-go
 protontricks
 qbittorrent-cli-bin
+redocly
 remotemouse
 rofi-greenclip
 rustdesk-bin
 sddm-theme-mountain-git
+sdl2
+sdl2-debug
 selectdefaultapplication-git
 session-desktop-bin
 tokyonight-gtk-theme-git

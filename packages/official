@@ -6,6 +6,8 @@ amd-ucode
 android-file-transfer
 android-tools
 arandr
+aspnet-runtime
+aspnet-runtime-8.0
 base
 base-devel
 bc
@@ -16,7 +18,6 @@ clang
 cmake
 cmatrix
 cronie
-dbeaver
 dex
 dhcpcd
 discord
@@ -26,6 +27,7 @@ docker
 docker-buildx
 docker-compose
 dosfstools
+dotnet-runtime
 dotnet-sdk
 dunst
 efibootmgr
@@ -35,7 +37,6 @@ eslint
 feh
 figlet
 firefox
-flatpak
 fzf
 gamemode
 gdb
@@ -59,12 +60,12 @@ imagemagick
 inetutils
 inkscape
 iptables-nft
+jellyfin-web
 jq
 kolourpaint
 krita
 leafpad
 lib32-gamemode
-libreoffice-fresh
 libvirt
 linux
 linux-firmware
