@@ -21,7 +21,6 @@ require("lazy").setup({
         tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    -- highlight yank operations
     --     {
     --         "rachartier/tiny-glimmer.nvim",
     --         config = function()
@@ -33,17 +32,6 @@ require("lazy").setup({
     --         },
     --     },
 
-    -- some features for golang
-    {
-        "olexsmir/gopher.nvim",
-        ft = "go",
-        config = function(_, opts)
-            require("gopher").setup(opts)
-        end,
-        build = function()
-            vim.cmd [[silent! GoInstallDeps]]
-        end
-    },
     -- file explorer that lets you edit your filesystem like a normal nvim buffer
     {
         'stevearc/oil.nvim',
@@ -62,18 +50,6 @@ require("lazy").setup({
             require('guess-indent').setup()
         end
     },
-    -- game for being good at vim
-    'thePrimeagen/vim-be-good',
-    -- helps working with cargo.toml
-    {
-        'saecki/crates.nvim',
-        tag = 'stable',
-        dependencies = { 'nvim-lua/plenary.nvim' },
-        config = function()
-            require('crates').setup()
-        end,
-    },
-    -- openssl decryption/encryption
     -- translation
     'uga-rosa/translate.nvim',
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
@@ -89,19 +65,6 @@ require("lazy").setup({
     },
     'mbbill/undotree',
     'tpope/vim-fugitive',
-    -- C sharp
-    "Hoffs/omnisharp-extended-lsp.nvim",
-    -- just for discord presence, nothing practical
-    'andweeb/presence.nvim',
-    -- lsp and other for flutter
-    -- use {
-    -- 'akinsho/flutter-tools.nvim',
-    -- requires = {
-    -- 'nvim-lua/plenary.nvim',
-    -- 'stevearc/dressing.nvim', -- optional for vim.ui.select
-    -- },
-    -- }
-    -- auto install lsp
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
@@ -131,22 +94,5 @@ require("lazy").setup({
     { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
-    -- leetcode stuff
-    {
-        "kawre/leetcode.nvim",
-        build = ":TSUpdate html",
-        dependencies = {
-            "nvim-telescope/telescope.nvim",
-            "nvim-lua/plenary.nvim", -- required by telescope
-            "MunifTanjim/nui.nvim",
-
-            -- optional
-            "nvim-treesitter/nvim-treesitter",
-            "rcarriga/nvim-notify",
-            "nvim-tree/nvim-web-devicons",
-        },
-        opts = {}
-    },
-    --
 })
 vim.cmd('colorscheme tokyonight')

@@ -39,58 +39,24 @@ require('mason-lspconfig').setup({
     -- Replace the language servers listed here
     -- with the ones you want to install
     ensure_installed = {
-        "jsonls",        -- json lsp
-        "html",          -- html lsp
-        "cssls",         -- CSS lsp
-        'ts_ls',         -- Typescript lsp
-        'jdtls',
-        'lua_ls',        -- Lua lsp
-        'pyright',       -- Python lsp
-        'rust_analyzer', -- Rust lsp
-        'gopls',         -- Golang lsp
-        'omnisharp',     -- C# lsp
-        'yamlls',        -- YAML lsp
-        'clangd',        -- C/C++
+        --  "jsonls",        -- json lsp
+        --  "html",          -- html lsp
+        --  "cssls",         -- CSS lsp
+        --  'ts_ls',         -- Typescript lsp
+        --  'jdtls',
+        --  'pyright',       -- Python lsp
+        --  'rust_analyzer', -- Rust lsp
+        --  'gopls',         -- Golang lsp
+        --  'omnisharp',     -- C# lsp
+        --  'yamlls',        -- YAML lsp
+        --  'clangd',        -- C/C++
+        'lua_ls', -- Lua lsp
         --'svelte',
     },
     handlers = {
         lsp.default_setup,
     },
 })
-
-require 'lspconfig'.ts_ls.setup {}
--- require('flutter-tools').setup({
--- lsp = {
--- capabilities = lsp.get_capabilities()
--- }
--- })
-
-require 'lspconfig'.jdtls.setup {
-    single_file_support = true,
-}
-
-require 'lspconfig'.omnisharp.setup({
-    cmd = { vim.fn.stdpath("data") .. "/mason/packages/omnisharp/omnisharp" },
-    handlers = {
-        ["textDocument/definition"] = require("omnisharp_extended").handler,
-    },
-    enable_editorconfig_support = true,
-    enable_ms_build_load_projects_on_demand = false,
-    enable_roslyn_analyzers = true,
-    organize_imports_on_format = true,
-    enable_import_completion = true,
-    sdk_include_prereleases = true,
-    analyze_open_documents_only = true,
-})
-
-require 'lspconfig'.rust_analyzer.setup {}
-require 'lspconfig'.clangd.setup {
-    cmd = {
-        "clangd",
-        "--fallback-style=webkit"
-    }
-}
-
 
 local cmp = require('cmp')
 vim.api.nvim_create_autocmd("BufRead", {
