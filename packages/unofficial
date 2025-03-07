@@ -8,6 +8,7 @@ bottles
 bun-bin
 cbonsai
 cht.sh-git
+cursor-bin
 debtap
 dotter-rs
 gocloc-git
@@ -19,6 +20,7 @@ kew
 linux-wifi-hotspot-bin
 mimeo
 ngrok
+onlyoffice-bin
 playit-bin
 prismlauncher-qt5-bin
 protoc-gen-go
