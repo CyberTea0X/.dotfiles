@@ -37,6 +37,7 @@ alias seriousbg="feh --bg-scale ~/Pictures/bg/arch-kiss-blue.png"
 alias syncthing-gui="xdg-open http://127.0.0.1:8384"
 alias active-units="sudo systemctl list-units --type=service | grep active"
 alias diskusage="df -Th -xtmpfs"
+alias code="codium"
 
 
 alias dockeron="sudo systemctl start docker.service"
@@ -128,5 +129,13 @@ hyperlink () {
 
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.cargo/bin
+export PATH="/home/anatoliy/.bun/bin:$PATH"
 # go install binaries
 export PATH=$PATH:~/go/bin
+# pnpm
+export PNPM_HOME="/home/anatoliy/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

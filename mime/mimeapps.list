@@ -8,11 +8,10 @@ application/xhtml+xml=firefox.desktop;
 application/zip=xarchiver.desktop;pcmanfm.desktop;
 image/jpeg=pinta.desktop;feh.desktop;
 image/png=nsxiv.desktop;feh.desktop;
-inode/directory=dev.zed.Zed.desktop;userapp-zip -r-BTQ9F2.desktop;pcmanfm.desktop;
+inode/directory=userapp-zip -r-BTQ9F2.desktop;dev.zed.Zed.desktop;pcmanfm.desktop;
 text/html=leafpad.desktop;firefox.desktop;
 x-scheme-handler/chrome=firefox.desktop;
 x-scheme-handler/http=firefox.desktop;
-application/vnd.appimage=com.appimage-installer.desktop;
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 application/java-archive=java-java-openjdk.desktop;xarchiver.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
@@ -20,8 +19,9 @@ text/plain=dev.zed.Zed.desktop;org.xfce.mousepad.desktop;leafpad.desktop;libreof
 application/xml=leafpad.desktop;
 application/x-msdownload=com.usebottles.bottles.desktop;wine.desktop;
 image/svg+xml=pinta.desktop;nsxiv.desktop;
-application/x-shellscript=leafpad.desktop;
+application/x-shellscript=userapp-bash-TEFP22.desktop;leafpad.desktop;
 image/avif=feh.desktop;nsxiv.desktop;
+audio/mpeg=org.kde.elisa.desktop;vlc.desktop;
 
 [Default Applications]
 image/jpeg=feh.desktop;
