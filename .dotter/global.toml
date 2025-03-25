@@ -15,12 +15,17 @@ depends = [
     "cargo",
     "polybar",
     "youtubedl",
-    "ideavim"
+    "ideavim",
+    "zed"
 ]
 
 # all packages not included in the default package
 [nondefault]
 depends = []
+
+# best editor
+[zed.files]
+zed = "~/.config/zed"
 
 # vim emulation plugins for jetbrains settings
 [ideavim.files]
