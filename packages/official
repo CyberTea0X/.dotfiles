@@ -54,9 +54,9 @@ hostapd
 hplip
 htop
 hwinfo
-i3-wm
 i3blocks
 i3lock
+i3-wm
 imagemagick
 inetutils
 inkscape
@@ -92,6 +92,7 @@ networkmanager
 ninja
 nitrogen
 nmap
+nm-connection-editor
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -129,6 +130,7 @@ rofi
 rsync
 rustup
 sddm
+sdl2-compat
 sdl3
 sof-firmware
 spice-vdagent
@@ -178,9 +180,9 @@ xf86-video-vesa
 xmlto
 xorg-bdftopcf
 xorg-docs
-xorg-font-util
 xorg-fonts-100dpi
 xorg-fonts-75dpi
+xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
