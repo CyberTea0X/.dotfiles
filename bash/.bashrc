@@ -138,3 +138,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+XDG_CURRENT_DESKTOP="i3"
