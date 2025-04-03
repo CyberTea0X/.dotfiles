@@ -1,0 +1,2 @@
+#!/bin/bash
+yt-dlp -o '~/Music/%(title)s' --extract-audio --audio-format mp3 --audio-quality 0 $1

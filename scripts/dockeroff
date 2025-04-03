@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo systemctl stop docker.service docker.socket containerd
+sudo nft flush table nat
+sudo nft flush table mangle
+sudo nft flush ruleset

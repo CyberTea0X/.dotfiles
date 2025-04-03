@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo systemctl enable --now nvidia-suspend.service
+sudo systemctl enable --now nvidia-hibernate.service
+sudo systemctl enable --now nvidia-resume.service

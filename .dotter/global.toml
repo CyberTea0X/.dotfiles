@@ -3,25 +3,27 @@
 
 [default]
 depends = [
-    "i3",
-    "bash",
-    "mime",
     "alacritty",
     "nvim",
-    "rofi",
-    "tms",
-    "tmux",
-    "joshuto",
     "cargo",
-    "polybar",
     "youtubedl",
-    "ideavim",
-    "zed"
+    "zed",
+    "hyprland",
+    "zsh",
+    "scripts",
+    "waybar"
 ]
 
-# all packages not included in the default package
-[nondefault]
-depends = []
+[waybar.files]
+waybar = "~/.config/waybar"
+
+# my scripts (mostly bash)
+[scripts.files]
+scripts = "~/.local/bin"
+
+# tiling wm for wayland
+[hyprland.files]
+hyprland = "~/.config/hypr"
 
 # best editor
 [zed.files]
@@ -82,10 +84,12 @@ modules_right = ""
 [gedit.files]
 gedit = "~/.local/share/gedit/styles"
 
+[zsh.files]
+zsh = "~/"
+
 [bash.files]
 "bash/.bashrc" = "~/.bashrc"
 "bash/.bash_profile" = "~/.bash_profile"
-"bash/scripts" = "~/.local/bin"
 
 # Terminal filemanager
 [joshuto.files]

@@ -1,0 +1,5 @@
+#!/bin/bash
+# to force off screen: xset dpms force off
+setxkbmap -model pc104 -option grp:switch,grp:caps_toggle,grp_led:caps us,ru
+xkb-switch -s us
+i3lock -c 000000 --nofork

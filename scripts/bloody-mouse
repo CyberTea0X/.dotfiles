@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "4\n10\n2\n0\n" | bloody-cli 2>&1 | head -n100 &>/dev/null &

@@ -1,0 +1,11 @@
+#!/bin/bash
+alacritty -e bash -c '
+    wg-quick up wg0 || (wg-quick down wg0 && wg-quick up wg0) || (echo "ERROR" && sleep infinity)
+    ping -c1 -q google.com;
+    if [[ $? -eq 0 ]]
+    then
+        notify-send "VPN started!"
+    else
+        wg-quick down wg0
+        notify-send "cant ping google from VPN, VPN shut down"
+    fi'
