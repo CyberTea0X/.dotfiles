@@ -33,6 +33,7 @@ go
 gradle
 grub
 gvfs
+gwenview
 hyprland
 imagemagick
 inetutils
@@ -64,6 +65,7 @@ nmap
 npm
 ntp
 nvidia-open
+nwg-displays
 nwg-look
 obs-studio
 ollama
