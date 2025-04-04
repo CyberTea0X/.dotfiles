@@ -9,7 +9,6 @@
     "cpu",
     "temperature",
     "custom/powerDraw",
-    "hyprland/language",
   ],
   "modules-center": ["hyprland/workspaces", "mpd"],
   "modules-right": [
@@ -20,6 +19,7 @@
     "group/audio",
     "group/networking",
     "battery",
+    "hyprland/language",
   ],
   "reload_style_on_change": true,
   "custom/launcher": {
