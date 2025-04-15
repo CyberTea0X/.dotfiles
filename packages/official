@@ -8,6 +8,7 @@ base-devel
 blueman
 bluez
 bluez-utils
+btop
 chromium
 clang
 cliphist
@@ -38,6 +39,7 @@ hyprland
 imagemagick
 inetutils
 inkscape
+jellyfin-server
 jellyfin-web
 kolourpaint
 krita
@@ -51,6 +53,7 @@ libvirt
 linux
 linux-firmware
 linux-headers
+lld
 mako
 man-db
 maven
@@ -76,6 +79,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plasma-framework5
+prismlauncher
 progress
 qbittorrent
 qemu-full
@@ -87,6 +91,7 @@ sddm-kcm
 spice-vdagent
 sqlc
 steam
+strace
 sudo
 syncthing
 systemsettings

@@ -2,7 +2,7 @@ bun-bin
 candy-icons-git
 dotter-rs-bin
 dtach
-frpc
+frpc-bin
 gocloc-git
 golangci-lint-bin
 hyprshot
@@ -12,7 +12,6 @@ nordic-theme
 onlyoffice-bin
 pinta
 playit-bin
-prismlauncher-qt5-bin
 protoc-gen-go
 protontricks
 qbittorrent-cli-bin

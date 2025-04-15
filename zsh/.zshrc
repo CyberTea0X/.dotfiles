@@ -1,3 +1,4 @@
+setopt extended_glob
 # VARIABLES
 export DOTS="$HOME/.dotfiles"
 export DOTSB="$DOTS/bash/.bashrc"

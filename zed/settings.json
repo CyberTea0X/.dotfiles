@@ -7,9 +7,6 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "tab_bar": {
-    "show": false
-  },
   "features": {
     "edit_prediction_provider": "zed"
   },
