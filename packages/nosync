@@ -1,16 +1,11 @@
-nvidia
-nvidia-settings
-nvidia-utils
-lib32-nvidia-utils
 opencl-nvidia
 cups
 sane
 print-manager
+intel-ucode
 a4tech-bloody-driver-git
 xppenlinux-v3
 droidcam
 v4l2loopback-dc-dkms
 legacylauncher
-jellyfin-server-bin
-jellyfin-media-player
 sdl2
