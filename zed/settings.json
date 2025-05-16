@@ -10,8 +10,6 @@
   "features": {
     "edit_prediction_provider": "zed"
   },
-  "ui_font_size": 12,
-  "buffer_font_size": 12.0,
   "theme": {
     "mode": "system",
     "light": "One Dark",
