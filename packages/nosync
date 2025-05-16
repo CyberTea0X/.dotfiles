@@ -9,3 +9,6 @@ droidcam
 v4l2loopback-dc-dkms
 legacylauncher
 sdl2
+intel-media-driver
+lib32-vulkan-intel
+vulkan-intel

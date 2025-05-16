@@ -1,5 +1,6 @@
 bun-bin
 candy-icons-git
+debtap
 dotter-rs-bin
 dtach
 frpc-bin
@@ -15,8 +16,6 @@ playit-bin
 protoc-gen-go
 protontricks
 qbittorrent-cli-bin
-redocly
-rose-pine-gtk-theme
 rustdesk-bin
 sweet-cursors-hyprcursor-git
 sweet-folders-icons-git
