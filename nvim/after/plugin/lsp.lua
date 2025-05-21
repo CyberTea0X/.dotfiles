@@ -46,7 +46,7 @@ require('mason-lspconfig').setup({
         --  'jdtls',
         --  'pyright',       -- Python lsp
         --  'rust_analyzer', -- Rust lsp
-        --  'gopls',         -- Golang lsp
+        'gopls',   -- Golang lsp
         --  'omnisharp',     -- C# lsp
         --  'yamlls',        -- YAML lsp
         --  'clangd',        -- C/C++
