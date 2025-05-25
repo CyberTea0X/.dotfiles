@@ -12,3 +12,5 @@ sdl2
 intel-media-driver
 lib32-vulkan-intel
 vulkan-intel
+lib32-nvidia-utils
+mesa-utils

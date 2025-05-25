@@ -1,6 +1,5 @@
 bun-bin
 candy-icons-git
-debtap
 dotter-rs-bin
 dtach
 frpc-bin
@@ -9,6 +8,7 @@ golangci-lint-bin
 hyprshot
 k6-bin
 networkmanager-dmenu-git
+noisetorch-bin
 nordic-theme
 onlyoffice-bin
 pinta
@@ -16,6 +16,7 @@ playit-bin
 protoc-gen-go
 protontricks
 qbittorrent-cli-bin
+redocly
 rustdesk-bin
 sweet-cursors-hyprcursor-git
 sweet-folders-icons-git

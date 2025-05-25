@@ -17,8 +17,8 @@
   },
   "agent": {
     "inline_assistant_model": {
-      "provider": "openai",
-      "model": "google/gemini-2.5-flash-preview"
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
     },
     "default_model": {
       "provider": "openai",
