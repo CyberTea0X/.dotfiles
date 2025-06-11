@@ -1,0 +1,2 @@
+#!/bin/bash
+yt-dlp -o '~/Videos/%(title)s'  -f bestvideo+bestaudio --merge-output-format mp4 --cookies-from-browser firefox  $1
