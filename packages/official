@@ -17,7 +17,9 @@ cmake
 cmatrix
 cpio
 cronie
+dnsmasq
 docker
+docker-buildx
 docker-compose
 dotnet-runtime
 dotnet-sdk
@@ -30,6 +32,7 @@ flatpak
 gamemode
 gdb
 git
+git-lfs
 glaze
 gnome-keyring
 go
@@ -66,7 +69,6 @@ meson
 mingw-w64-gcc
 mold
 ncdu
-neofetch
 neovim
 networkmanager
 nmap
@@ -77,6 +79,7 @@ nwg-displays
 nwg-look
 obs-studio
 ollama
+onnxruntime
 openresolv
 pacman
 pavucontrol
@@ -105,6 +108,7 @@ thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
+tiled
 torbrowser-launcher
 tree
 ttf-fira-code
@@ -115,6 +119,7 @@ ttf-nerd-fonts-symbols
 tumbler
 unrar
 unzip
+uv
 uwsm
 vim
 virt-manager

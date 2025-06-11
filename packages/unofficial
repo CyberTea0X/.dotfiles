@@ -7,11 +7,13 @@ gocloc-git
 golangci-lint-bin
 hyprshot
 k6-bin
+neofetch
 networkmanager-dmenu-git
 noisetorch-bin
 nordic-theme
 onlyoffice-bin
 pinta
+pixelorama-bin
 playit-bin
 protoc-gen-go
 protontricks
@@ -22,6 +24,8 @@ sweet-cursors-hyprcursor-git
 sweet-folders-icons-git
 sweet-gtk-theme
 telegram-desktop-bin
+vscodium-bin
+wails
 whatsdesk-bin
 yay
 zrok-bin
