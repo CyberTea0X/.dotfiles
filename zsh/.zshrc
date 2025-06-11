@@ -18,6 +18,7 @@ alias syncthing-gui="xdg-open http://127.0.0.1:8384"
 alias active-units="sudo systemctl list-units --type=service | grep active"
 alias diskusage="df -Th -xtmpfs"
 alias task="go-task"
+alias waybarre="killall waybar;waybar &; disown;"
 
 
 alias dockeron="sudo systemctl start docker.service"
