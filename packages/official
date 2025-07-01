@@ -46,7 +46,6 @@ hyprland
 imagemagick
 inetutils
 inkscape
-jdk21-openjdk
 jdk8-openjdk
 jellyfin-server
 jellyfin-web
@@ -55,7 +54,6 @@ kolourpaint
 krita
 kwallet-pam
 ladspa
-less
 lib32-gamemode
 lib32-libdecor
 lib32-pipewire
