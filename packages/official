@@ -6,6 +6,7 @@ amd-ucode
 audacity
 base
 base-devel
+bind
 blueman
 bluez
 bluez-utils
@@ -17,6 +18,7 @@ cmake
 cmatrix
 cpio
 cronie
+delve
 dnsmasq
 docker
 docker-buildx
@@ -39,6 +41,7 @@ go-task
 gradle
 grub
 gvfs
+hplip
 hwinfo
 hyprland
 imagemagick
@@ -79,6 +82,7 @@ nvidia-open
 nwg-displays
 nwg-look
 obs-studio
+okular
 ollama
 onnxruntime
 openresolv
@@ -95,10 +99,12 @@ qemu-full
 qt5-declarative
 ripgrep
 rsync
+samba
 sddm
 sddm-kcm
 seahorse
 shotcut
+smbclient
 spice-vdagent
 sqlc
 steam
@@ -106,6 +112,7 @@ strace
 stress
 sudo
 syncthing
+system-config-printer
 systemsettings
 thunar
 thunar-archive-plugin
@@ -120,12 +127,14 @@ ttf-fira-mono
 ttf-fira-sans
 ttf-nerd-fonts-symbols
 tumbler
+ufw
 unrar
 unzip
 uv
 uwsm
 vim
 virt-manager
+vsftpd
 waybar
 wget
 wine
