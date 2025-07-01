@@ -41,10 +41,12 @@ go-task
 gradle
 grub
 gvfs
+hwinfo
 hyprland
 imagemagick
 inetutils
 inkscape
+jdk21-openjdk
 jdk8-openjdk
 jellyfin-server
 jellyfin-web
@@ -53,6 +55,7 @@ kolourpaint
 krita
 kwallet-pam
 ladspa
+less
 lib32-gamemode
 lib32-libdecor
 lib32-pipewire
@@ -91,6 +94,7 @@ plasma-framework5
 pnpm
 prismlauncher
 progress
+psensor
 qbittorrent
 qemu-full
 qt5-declarative
