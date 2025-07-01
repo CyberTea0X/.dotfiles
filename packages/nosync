@@ -14,3 +14,6 @@ lib32-vulkan-intel
 vulkan-intel
 lib32-nvidia-utils
 mesa-utils
+hplip
+system-config-printer
+hpuld

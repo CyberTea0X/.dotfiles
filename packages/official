@@ -41,7 +41,6 @@ go-task
 gradle
 grub
 gvfs
-hplip
 hwinfo
 hyprland
 imagemagick
@@ -112,7 +111,6 @@ strace
 stress
 sudo
 syncthing
-system-config-printer
 systemsettings
 thunar
 thunar-archive-plugin
