@@ -4,7 +4,14 @@ alacritty -e bash -c '
 
     while true; do
     # Поднимаем VPN
-    wg-quick up wg0 || (wg-quick down wg0 && wg-quick up wg0)
+    while true; do
+        wg-quick up wg0
+        if [[ $? -eq 0 ]]; then
+            break
+        else
+            wg-quick down wg0
+        fi
+    done
 
         # Проверяем пинг
         timeout 2 ping -c1 -q google.com > /dev/null 2>&1
