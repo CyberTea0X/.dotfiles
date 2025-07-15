@@ -1,11 +1,33 @@
 #!/bin/bash
 alacritty -e bash -c '
-    wg-quick up wg0 || (wg-quick down wg0 && wg-quick up wg0) || (echo "ERROR" && sleep infinity)
-    ping -c1 -q google.com;
-    if [[ $? -eq 0 ]]
-    then
-        notify-send "VPN started!"
-    else
-        wg-quick down wg0
-        notify-send "cant ping google from VPN, VPN shut down"
-    fi'
+    retry_count=0
+
+    while true; do
+    # Поднимаем VPN
+    wg-quick up wg0 || (wg-quick down wg0 && wg-quick up wg0)
+
+        # Проверяем пинг
+        timeout 2 ping -c1 -q google.com > /dev/null 2>&1
+
+        if [[ $? -eq 0 ]]; then
+            notify-send "VPN started!"
+            exit 0
+        else
+            # Если не пингуется
+            if [[ $retry_count -eq 0 ]]; then
+                notify-send "No ping to Google via VPN, retrying..."
+            fi
+
+            # Вычисляем задержку (retry_count + 1)
+            delay=$((retry_count + 1))
+            sleep "$delay"
+
+            # Увеличиваем счётчик попыток
+            ((retry_count++))
+        fi
+    done
+
+    # Если вышли из цикла из-за ошибки
+    wg-quick down wg0
+    notify-send "Can'\''t ping Google via VPN, shutting down."
+'

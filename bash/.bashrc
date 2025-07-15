@@ -129,6 +129,7 @@ hyperlink () {
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.cargo/bin
 export PATH="/home/anatoliy/.bun/bin:$PATH"
+export PATH="/home/anatoliy/.cache/.bun/bin:$PATH"
 # go install binaries
 export PATH=$PATH:~/go/bin
 # pnpm
